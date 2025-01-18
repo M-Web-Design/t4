@@ -1,0 +1,6338 @@
+@charset "UTF-8";
+/*
+
+*/
+/******************************************************************
+ * Reset CSS - CBT LINKs
+******************************************************************/
+/* reset margin
+-----------------------------------------------------------------*/
+/* line 8, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_reset.scss */
+:root {
+	--primary-color: #b6dfff;
+  }
+  
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  zoom: 1;
+  /* hasLayout in IE */
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font: inherit;
+  vertical-align: baseline;
+  background: transparent;
+  -webkit-text-size-adjust: 100%;
+  word-break: break-all;
+}
+
+/* reset font style
+-----------------------------------------------------------------*/
+/* line 37, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_reset.scss */
+html {
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+/* line 42, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_reset.scss */
+html * {
+  box-sizing: inherit;
+}
+
+/* line 46, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_reset.scss */
+body {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.8;
+  letter-spacing: 2px;
+  background: #edf7ff;
+  color: #000;
+}
+
+@media (max-width: 1049px) {
+  /* line 46, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_reset.scss */
+  body {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 767px) {
+  /* line 46, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_reset.scss */
+  body {
+    font-size: 13px;
+  }
+}
+
+/* line 62, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_reset.scss */
+body.fixed {
+  position: fixed;
+  width: 100%;
+}
+
+/* line 69, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_reset.scss */
+ul,
+ol {
+  list-style-type: none;
+}
+
+/* line 73, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_reset.scss */
+a {
+  margin: 0;
+  padding: 0;
+  color: inherit;
+  text-decoration: none;
+}
+
+/* line 80, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_reset.scss */
+em,
+strong {
+  font-style: normal;
+  font-weight: inherit;
+}
+
+/* reset table
+-----------------------------------------------------------------*/
+/* line 88, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 93, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_reset.scss */
+table,
+th,
+td {
+  table-layout: fixed;
+}
+
+/* line 97, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_reset.scss */
+caption,
+th,
+td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* reset form style
+-----------------------------------------------------------------*/
+/* line 106, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_reset.scss */
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+textarea {
+  padding: 0;
+  border: none;
+  border-radius: 0;
+  outline: none;
+  background: none;
+}
+
+/* line 117, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_reset.scss */
+button,
+input[type="reset"],
+input[type="submit"],
+input[type="button"] {
+  border-radius: 0;
+  -webkit-box-sizing: content-box;
+  -webkit-appearance: button;
+  appearance: button;
+  border: none;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+/* line 130, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_reset.scss */
+button,
+input[type="reset"]::-webkit-search-decoration,
+input[type="submit"]::-webkit-search-decoration,
+input[type="button"]::-webkit-search-decoration {
+  display: none;
+}
+
+/* line 137, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_reset.scss */
+button,
+input[type="reset"]:focus,
+input[type="submit"]:focus,
+input[type="button"]:focus {
+  outline-offset: -2px;
+}
+
+/* line 144, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_reset.scss */
+textarea {
+  resize: none;
+  overflow: auto;
+}
+
+/* line 149, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_reset.scss */
+*:focus {
+  outline: none;
+}
+
+/* reset img
+-----------------------------------------------------------------*/
+/* line 157, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_reset.scss */
+img {
+  font-size: 0;
+  line-height: 0;
+  vertical-align: bottom;
+  height: auto;
+  max-width: 100%;
+}
+
+/******************************************************************
+ * セクション共通部分
+******************************************************************/
+/* Breakpoint
+-----------------------------------------------------------------*/
+/* line 8, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_common.scss */
+.inner {
+  width: 950px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (max-width: 1127px) {
+  /* line 8, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_common.scss */
+  .inner {
+    width: 94%;
+  }
+}
+
+@media (max-width: 640px) {
+  /* line 8, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_common.scss */
+  .inner {
+    width: 88%;
+  }
+}
+
+/* line 23, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_common.scss */
+.wrapper {
+  display: flex;
+}
+
+/* line 26, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_common.scss */
+.wrapper main,
+.wrapper .main {
+  width: 100%;
+  overflow: hidden;
+}
+
+@media (max-width: 767px) {
+  /* line 34, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_common.scss */
+  .tab {
+    display: none;
+  }
+}
+
+@media (min-width: 641px) {
+  /* line 40, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_common.scss */
+  .sp {
+    display: none;
+  }
+}
+
+@media (max-width: 640px) {
+  /* line 46, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_common.scss */
+  .pc {
+    display: none;
+  }
+}
+
+/* Parts
+-----------------------------------------------------------------*/
+/* line 55, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_common.scss */
+.title-en {
+  font-family: "Montserrat", sans-serif;
+  font-size: 35px;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 6px;
+  margin-bottom: 40px;
+}
+
+@media (max-width: 640px) {
+  /* line 55, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_common.scss */
+  .title-en {
+    margin-bottom: 20px;
+  }
+}
+
+/* line 69, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_common.scss */
+.paren {
+  display: inline-block;
+  background: url("img/common/paren_left.png") center left no-repeat,
+    url("img/common/paren_right.png") center right no-repeat;
+  background-size: contain;
+  text-align: center;
+  font-weight: bold;
+  padding: 0 60px;
+  margin: 0 auto;
+}
+
+@media (max-width: 640px) {
+  /* line 69, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_common.scss */
+  .paren {
+    width: 100%;
+    background: url("img/common/paren_left.png") center left no-repeat,
+      url("img/common/paren_right.png") center right no-repeat;
+    background-size: 10px;
+    padding: 0 20px;
+  }
+}
+
+/* line 86, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_common.scss */
+.section-text {
+  line-height: 2;
+}
+
+/* line 90, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_common.scss */
+.btn-s {
+  position: relative;
+  width: 280px;
+  background: var(--primary-color);
+  border-radius: 50px;
+border: var(--primary-color) 2px solid;
+transition: background-color 0.2s ease, border-color 0.2s ease; /* 添加過渡效果 */
+
+
+}
+
+.btn-s:hover{
+	background:#8ccdff;
+	border: var(--primary-color) 2px solid;
+}
+
+/* line 116, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_common.scss */
+.btn-s a,
+.btn-s button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 60px;
+  font-weight: bold;
+}
+
+
+
+/* line 163, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_common.scss */
+.btn-s a:hover .line::before,
+.btn-s button:hover .line::before {
+  animation-duration: 0.8s;
+  animation-name: btnLine;
+}
+
+@keyframes btnLine {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(100%);
+    background-color: #000;
+  }
+  26% {
+    background-color: transparent;
+  }
+  27% {
+    transform: translateX(-100%);
+  }
+  40% {
+    background-color: #000;
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* line 196, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_common.scss */
+.btn-s button {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+/* line 200, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_common.scss */
+.btn-s.rev {
+  height: 60px;
+  background: #fff;
+  border-radius: 50px 14px 14px 50px;
+}
+
+/* line 205, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_common.scss */
+.btn-s.rev::after {
+  position: absolute;
+  left: 20px;
+  top: 15px;
+  content: " ";
+  width: 30px;
+  height: 30px;
+  background: var(--primary-color);
+  border-radius: 50px;
+  transition: all 0.4s linear;
+}
+
+/* line 219, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_common.scss */
+.btn-s.rev a .line,
+.btn-s.rev button .line {
+  position: absolute;
+  height: 2px;
+  width: 30px;
+  top: 29px;
+  left: 36px;
+  z-index: 10;
+  overflow: hidden;
+}
+
+/* line 228, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_common.scss */
+.btn-s.rev a .line::before,
+.btn-s.rev button .line::before {
+  width: 30px;
+  height: 2px;
+  content: " ";
+  background: #000;
+  display: block;
+}
+
+/* line 237, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_common.scss */
+.btn-s.rev a .dot,
+.btn-s.rev button .dot {
+  position: absolute;
+  left: 30px;
+  top: 25px;
+  content: " ";
+  width: 10px;
+  height: 10px;
+  background: #000;
+  font-size: 10px;
+  border-radius: 50px;
+  z-index: 10;
+}
+
+/* line 253, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_common.scss */
+.btn-s.rev a:hover .line::before,
+.btn-s.rev button:hover .line::before {
+  animation-duration: 0.8s;
+  animation-name: btnLineRev;
+}
+
+@keyframes btnLineRev {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-100%);
+    background-color: #000;
+  }
+  26% {
+    background-color: transparent;
+  }
+  27% {
+    transform: translateX(100%);
+  }
+  40% {
+    background-color: #000;
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* line 284, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_common.scss */
+.btn-s.rev a input[type="button"],
+.btn-s.rev button input[type="button"] {
+  width: 250px;
+  height: 60px;
+  background: transparent;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+/* line 296, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_common.scss */
+.btn-l {
+  position: relative;
+  width: 600px;
+  background: var(--primary-color);
+  border-radius: 50px;
+  margin: 0 auto;
+}
+
+@media (max-width: 1079px) {
+  /* line 296, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_common.scss */
+  .btn-l {
+    width: 540px;
+  }
+}
+
+@media (max-width: 640px) {
+  /* line 296, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_common.scss */
+  .btn-l {
+    width: 82%;
+    margin: 0 auto;
+  }
+}
+
+
+@media (max-width: 1079px) {
+  /* line 312, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_common.scss */
+  .btn-l::after {
+    top: 20px;
+    right: 20px;
+  }
+}
+
+/* line 335, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_common.scss */
+.btn-l:hover::after {
+  transform: scale(1.3, 1.3);
+  transition: all 0.4s ease;
+}
+
+/* line 342, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_common.scss */
+.btn-l a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 6px;
+}
+
+@media (max-width: 1079px) {
+  /* line 342, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_common.scss */
+  .btn-l a {
+    height: 80px;
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 640px) {
+  /* line 342, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_common.scss */
+  .btn-l a {
+    justify-content: normal;
+    font-size: 18px;
+    padding-left: 60px;
+  }
+}
+
+/* line 362, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_common.scss */
+.btn-l a .line {
+  position: absolute;
+  width: 50px;
+  height: 2px;
+  top: 49px;
+  right: 40px;
+  z-index: 10;
+  overflow: hidden;
+}
+
+@media (max-width: 1079px) {
+  /* line 362, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_common.scss */
+  .btn-l a .line {
+    width: 34px;
+    top: 38px;
+    right: 40px;
+  }
+}
+
+/* line 377, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_common.scss */
+.btn-l a .line::before {
+  width: 50px;
+  height: 2px;
+  content: " ";
+  background: #000;
+  display: block;
+}
+
+/* line 387, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_common.scss */
+.btn-l a .dot {
+  position: absolute;
+  top: 45px;
+  right: 34px;
+  content: " ";
+  width: 10px;
+  height: 10px;
+  background: #000;
+  font-size: 10px;
+  border-radius: 50px;
+  z-index: 10;
+}
+
+@media (max-width: 1079px) {
+  /* line 387, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_common.scss */
+  .btn-l a .dot {
+    top: 34px;
+    right: 35px;
+  }
+}
+
+/* line 410, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_common.scss */
+.btn-l a:hover .line::before {
+  animation-duration: 0.8s;
+  animation-name: btnLine;
+}
+
+@keyframes btnLine {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(100%);
+    background-color: #000;
+  }
+  26% {
+    background-color: transparent;
+  }
+  27% {
+    transform: translateX(-100%);
+  }
+  40% {
+    background-color: #000;
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* line 446, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_common.scss */
+.contact,
+.contactHam {
+  margin: 0 auto;
+  width: 200px;
+  background: #f66e6e
+  border-radius: 6px 0 0 0;
+  z-index: 100;
+}
+
+@media (max-width: 767px) {
+  /* line 446, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_common.scss */
+  .contact,
+  .contactHam {
+    width: 90%;
+    text-align: center;
+    border-radius: 6px;
+    margin: 0 auto;
+  }
+}
+
+/* line 461, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_common.scss */
+.contact a,
+.contactHam a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  color: #fff;
+  font-weight: bold;
+  padding: 16px 0;
+  background: #f66e6e
+}
+
+/* line 470, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_common.scss */
+.contact a img,
+.contactHam a img {
+  width: 24px;
+  margin-left: 4px;
+}
+
+/* line 477, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_common.scss */
+.contact:hover,
+.contactHam:hover {
+  background: #147f14;
+  transition: all 0.4s ease;
+}
+
+/* scroll animation
+-----------------------------------------------------------------*/
+/* line 486, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_common.scss */
+.fade {
+  opacity: 0;
+  transition: all 1s ease;
+}
+
+/* line 491, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_common.scss */
+.fade.show {
+  opacity: 1;
+  transform: none;
+}
+
+/**
+ * 画面遷移時のアニメーション
+ */
+/* line 500, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_common.scss */
+.transition-anim {
+  position: fixed;
+  background-color: var(--primary-color);
+  top: 0;
+  left: 100%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  pointer-events: none;
+  width: 282.84271vh;
+  height: 282.84271vh;
+  border-radius: 50%;
+  transition: width 0.8s ease 0.4s, height 0.8s ease 0.4s;
+}
+
+@media (orientation: landscape) {
+  /* line 500, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_common.scss */
+  .transition-anim {
+    width: 282.84271vw;
+    height: 282.84271vw;
+  }
+}
+
+/* line 518, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_common.scss */
+.transition-anim::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+  width: 282.84271vh;
+  height: 282.84271vh;
+  background-color: #fff;
+  border-radius: 50%;
+  transition: width 0.7s ease, height 0.7s ease;
+}
+
+@media (orientation: landscape) {
+  /* line 518, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_common.scss */
+  .transition-anim::after {
+    width: 282.84271vw;
+    height: 282.84271vw;
+  }
+}
+
+/* line 537, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_common.scss */
+.transition-anim._anim {
+  width: 0;
+  height: 0;
+}
+
+/* line 541, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_common.scss */
+.transition-anim._anim::after {
+  width: 0;
+  height: 0;
+}
+
+/* line 549, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_common.scss */
+.main-body {
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+/* line 553, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_common.scss */
+.main-body._anim {
+  opacity: 1;
+}
+
+/******************************************************************
+ * ヘッダー
+******************************************************************/
+/* PC / sidebar
+-----------------------------------------------------------------*/
+/* line 8, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_header.scss */
+.header {
+  width: 260px;
+  background: transparent;
+  z-index: 100;
+}
+
+@media (max-width: 1169px) {
+  /* line 8, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_header.scss */
+  .header {
+    width: 200px;
+  }
+}
+
+@media (max-width: 767px) {
+  /* line 8, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_header.scss */
+  .header {
+    width: 0;
+  }
+}
+
+/* line 21, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_header.scss */
+.header .header-nav {
+  position: fixed;
+  top: 40px;
+  left: 40px;
+}
+
+@media (max-width: 1169px) {
+  /* line 21, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_header.scss */
+  .header .header-nav {
+    top: 30px;
+    left: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  /* line 21, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_header.scss */
+  .header .header-nav {
+    display: none;
+  }
+}
+
+/* line 36, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_header.scss */
+.header .header-nav h1 {
+  width: 136px;
+  margin-bottom: 80px;
+}
+
+@media (max-width: 1169px) {
+  /* line 36, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_header.scss */
+  .header .header-nav h1 {
+    width: 100px;
+  }
+}
+
+/* line 46, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_header.scss */
+.header .header-nav ul li {
+  line-height: 2.5;
+}
+
+@media (max-width: 1169px) {
+  /* line 46, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_header.scss */
+  .header .header-nav ul li {
+    line-height: 2;
+  }
+}
+
+/* line 53, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_header.scss */
+.header .header-nav ul li a {
+  position: relative;
+  font-weight: bold;
+  padding: 4px;
+}
+
+@media (max-width: 1169px) {
+  /* line 53, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_header.scss */
+  .header .header-nav ul li a {
+    font-size: 12px;
+  }
+}
+
+/* line 62, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_header.scss */
+.header .header-nav ul li a::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  content: " ";
+  background: var(--primary-color);
+  transform-origin: right top;
+  transform: scale(0, 1);
+  transition: transform 0.3s;
+}
+
+/* line 76, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_header.scss */
+.header .header-nav ul li a:hover::before {
+  transform-origin: left top;
+  transform: scale(1, 1);
+}
+
+/* line 86, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_header.scss */
+.header .header-nav .contact {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  border-radius: 6px 0 0 0;
+}
+
+@media (min-width: 768px) {
+  /* line 95, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_header.scss */
+  .header #headerNavSp {
+    display: none !important;
+  }
+}
+
+/* line 105, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_header.scss */
+.contact-wrap .contact {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  border-radius: 6px 0 0 0;
+}
+
+@media (max-width: 767px) {
+  /* line 105, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_header.scss */
+  .contact-wrap .contact {
+    width: 88%;
+    left: 0;
+    bottom: 10px;
+    border-radius: 6px;
+  }
+}
+
+/* SP
+-----------------------------------------------------------------*/
+/* line 127, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_header.scss */
+.header-nav-sp {
+  position: relative;
+  z-index: 9999;
+}
+
+@media (min-width: 768px) {
+  /* line 127, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_header.scss */
+  .header-nav-sp {
+    display: none;
+  }
+}
+
+/* line 135, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_header.scss */
+.header-nav-sp .fixwrap {
+  position: fixed;
+  background: #edf7ff;
+  width: 100%;
+  height: 60px;
+  top: 0;
+  left: 0;
+  z-index: 400;
+}
+
+/* line 144, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_header.scss */
+.header-nav-sp .fixwrap h1 {
+  position: fixed;
+  top: 14px;
+  left: 14px;
+  width: 220px;
+}
+
+/* line 150, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_header.scss */
+.header-nav-sp .fixwrap h1 img {
+  width: 100%;
+}
+
+/* line 156, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_header.scss */
+.header-nav-sp .fixwrap .navToggle {
+  position: fixed;
+  right: 8px;
+  top: 12px;
+  width: 34px;
+  height: 34px;
+  z-index: 9999;
+  background: transparent;
+  cursor: pointer;
+  text-align: center;
+}
+
+/* line 167, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_header.scss */
+.header-nav-sp .fixwrap .navToggle span {
+  display: block;
+  position: absolute;
+  width: 24px;
+  cursor: pointer;
+  border-bottom: solid 3px #000;
+  border-radius: 100px;
+  -webkit-transition: 0.35s ease-in-out;
+  -moz-transition: 0.35s ease-in-out;
+  transition: 0.35s ease-in-out;
+  left: 6px;
+}
+
+/* line 179, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_header.scss */
+.header-nav-sp .fixwrap .navToggle span:nth-child(1) {
+  top: 10px;
+}
+
+/* line 183, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_header.scss */
+.header-nav-sp .fixwrap .navToggle span:nth-child(2) {
+  top: 18px;
+}
+
+/* line 187, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_header.scss */
+.header-nav-sp .fixwrap .navToggle span:nth-child(3) {
+  top: 26px;
+}
+
+/* line 191, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_header.scss */
+.header-nav-sp .fixwrap .navToggle span:nth-child(4) {
+  border: none;
+  color: #eee;
+  font-size: 9px;
+  font-weight: bold;
+  top: 34px;
+}
+
+/* line 201, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_header.scss */
+.header-nav-sp .fixwrap .navToggle.active {
+  z-index: 9999;
+}
+
+/* line 204, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_header.scss */
+.header-nav-sp .fixwrap .navToggle.active span {
+  border-bottom: solid 3px #000;
+}
+
+/* line 207, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_header.scss */
+.header-nav-sp .fixwrap .navToggle.active span:nth-child(1) {
+  top: 18px;
+  left: 6px;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+/* line 215, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_header.scss */
+.header-nav-sp .fixwrap .navToggle.active span:nth-child(2) {
+  opacity: 0;
+}
+
+/* line 219, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_header.scss */
+.header-nav-sp .fixwrap .navToggle.active span:nth-child(3) {
+  top: 18px;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+/* line 234, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_header.scss */
+.header-nav-sp .navToggle {
+  position: fixed;
+  right: 8px;
+  top: 12px;
+  width: 34px;
+  height: 34px;
+  z-index: 9999;
+  background: transparent;
+  cursor: pointer;
+  text-align: center;
+}
+
+/* line 245, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_header.scss */
+.header-nav-sp .navToggle span {
+  display: block;
+  position: absolute;
+  width: 24px;
+  cursor: pointer;
+  border-bottom: solid 3px #000;
+  border-radius: 100px;
+  -webkit-transition: 0.35s ease-in-out;
+  -moz-transition: 0.35s ease-in-out;
+  transition: 0.35s ease-in-out;
+  left: 6px;
+}
+
+/* line 257, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_header.scss */
+.header-nav-sp .navToggle span:nth-child(1) {
+  top: 10px;
+}
+
+/* line 261, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_header.scss */
+.header-nav-sp .navToggle span:nth-child(2) {
+  top: 18px;
+}
+
+/* line 265, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_header.scss */
+.header-nav-sp .navToggle span:nth-child(3) {
+  top: 26px;
+}
+
+/* line 269, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_header.scss */
+.header-nav-sp .navToggle span:nth-child(4) {
+  border: none;
+  color: #eee;
+  font-size: 9px;
+  font-weight: bold;
+  top: 34px;
+}
+
+/* line 280, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_header.scss */
+.header-nav-sp .navToggle.active span {
+  border-bottom: solid 3px #000;
+}
+
+/* line 283, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_header.scss */
+.header-nav-sp .navToggle.active span:nth-child(1) {
+  top: 18px;
+  left: 6px;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+/* line 291, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_header.scss */
+.header-nav-sp .navToggle.active span:nth-child(2) {
+  opacity: 0;
+}
+
+/* line 295, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_header.scss */
+.header-nav-sp .navToggle.active span:nth-child(3) {
+  top: 18px;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+/* line 308, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_header.scss */
+.header-nav-sp .globalMenuSp {
+  position: fixed;
+  z-index: 600;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  color: #000;
+  text-align: left;
+  width: 100%;
+  overflow: hidden;
+  -webkit-overflow-scrolling: touch;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0s linear 0.7s;
+}
+
+/* line 327, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_header.scss */
+.header-nav-sp .globalMenuSp__bg {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  transform: translate(-50%, -50%);
+  width: 0;
+  height: 0;
+  background-color: var(--primary-color);
+  transition: width 0.5s ease 0.1s, height 0.5s ease 0.1s;
+  border-radius: 50%;
+}
+
+/* line 339, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_header.scss */
+.header-nav-sp .globalMenuSp__inner {
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: auto;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0.2s ease, opacity 0.2s ease, transform 0.2s ease;
+  transform: scale(0.99);
+}
+
+/* line 352, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_header.scss */
+.header-nav-sp .globalMenuSp h1 {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  width: 240px;
+}
+
+/* line 359, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_header.scss */
+.header-nav-sp .globalMenuSp ul {
+  margin-bottom: 20px;
+  padding: 0;
+}
+
+/* line 364, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_header.scss */
+.header-nav-sp .globalMenuSp ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+}
+
+/* line 371, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_header.scss */
+.header-nav-sp .globalMenuSp ul li a {
+  display: block;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 8px 0;
+}
+
+/* line 381, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_header.scss */
+.header-nav-sp .globalMenuSp.active {
+  visibility: visible;
+  opacity: 1;
+  transition: none;
+}
+
+/* line 386, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_header.scss */
+.header-nav-sp .globalMenuSp.active .globalMenuSp__bg {
+  width: 282.84271vh;
+  height: 282.84271vh;
+  transition: width 0.5s ease, height 0.5s ease;
+}
+
+@media (orientation: landscape) {
+  /* line 386, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_header.scss */
+  .header-nav-sp .globalMenuSp.active .globalMenuSp__bg {
+    width: 282.84271vw;
+    height: 282.84271vw;
+  }
+}
+
+/* line 397, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_header.scss */
+.header-nav-sp .globalMenuSp.active .globalMenuSp__inner {
+  visibility: visible;
+  opacity: 1;
+  transform: scale(1);
+  transition: visibility 0.2s ease 0.3s, opacity 0.2s ease 0.3s,
+    transform 0.2s ease 0.3s;
+}
+
+/******************************************************************
+ * フッター
+******************************************************************/
+/* footer
+-----------------------------------------------------------------*/
+/* line 8, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_footer.scss */
+footer {
+  position: relative;
+  z-index: 98;
+  background: #000;
+  padding: 80px 0;
+}
+
+@media (max-width: 640px) {
+  /* line 8, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_footer.scss */
+  footer {
+    padding: 40px 0;
+  }
+}
+
+/* line 18, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_footer.scss */
+footer .footer-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 180px 0 60px;
+}
+
+@media (max-width: 1199px) {
+  /* line 18, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_footer.scss */
+  footer .footer-wrap {
+    padding: 0 90px 0 30px;
+  }
+}
+
+@media (max-width: 969px) {
+  /* line 18, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_footer.scss */
+  footer .footer-wrap {
+    padding: 0 60px 0 30px;
+  }
+}
+
+@media (max-width: 799px) {
+  /* line 18, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_footer.scss */
+  footer .footer-wrap {
+    align-items: flex-end;
+  }
+}
+
+@media (max-width: 640px) {
+  /* line 18, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_footer.scss */
+  footer .footer-wrap {
+    display: block;
+  }
+}
+
+/* line 40, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_footer.scss */
+footer .footer-wrap .footer-left {
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 799px) {
+  /* line 40, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_footer.scss */
+  footer .footer-wrap .footer-left {
+    display: block;
+  }
+}
+
+@media (max-width: 640px) {
+  /* line 40, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_footer.scss */
+  footer .footer-wrap .footer-left {
+    margin-bottom: 20px;
+  }
+}
+
+/* line 52, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_footer.scss */
+footer .footer-wrap .footer-left h2 {
+  width: 342px;
+  margin-right: 50px;
+}
+
+@media (max-width: 1199px) {
+  /* line 52, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_footer.scss */
+  footer .footer-wrap .footer-left h2 {
+    width: 260px;
+    margin-right: 30px;
+  }
+}
+
+@media (max-width: 969px) {
+  /* line 52, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_footer.scss */
+  footer .footer-wrap .footer-left h2 {
+    width: 200px;
+    margin-right: 14px;
+  }
+}
+
+@media (max-width: 799px) {
+  /* line 52, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_footer.scss */
+  footer .footer-wrap .footer-left h2 {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+}
+
+/* line 73, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_footer.scss */
+footer .footer-wrap .footer-left p {
+  font-size: 12px;
+  color: #fff;
+  line-height: 2;
+}
+
+@media (max-width: 969px) {
+  /* line 73, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_footer.scss */
+  footer .footer-wrap .footer-left p {
+    font-size: 10px;
+  }
+}
+
+/* line 82, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_footer.scss */
+footer .footer-wrap .footer-left p a {
+  text-decoration: underline;
+}
+
+/* line 89, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_footer.scss */
+footer .footer-wrap .footer-copy {
+  font-size: 10px;
+  color: #787878;
+}
+
+/* pagetop
+-----------------------------------------------------------------*/
+/* line 99, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_footer.scss */
+.pagetop {
+  position: absolute;
+  top: -20px;
+  right: 2%;
+  width: 40px;
+  height: 40px;
+  background: #000;
+  border-radius: 40px;
+}
+
+/* line 108, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_footer.scss */
+.pagetop a {
+  position: relative;
+}
+
+/* line 111, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_footer.scss */
+.pagetop a::after {
+  position: absolute;
+  top: 90px;
+  right: -60px;
+  content: "PAGE TOP";
+  width: 80px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 10px;
+  font-weight: bold;
+  color: #fff;
+  transform: rotate(90deg);
+}
+
+/* line 124, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_footer.scss */
+.pagetop a .line {
+  position: absolute;
+  right: -21px;
+  top: 20px;
+  height: 30px;
+  width: 2px;
+  z-index: 10;
+  overflow: hidden;
+}
+
+/* line 133, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_footer.scss */
+.pagetop a .line::before {
+  height: 30px;
+  width: 2px;
+  content: " ";
+  background: #fff;
+  display: block;
+}
+
+/* line 142, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_footer.scss */
+.pagetop a .dot {
+  position: absolute;
+  right: -24px;
+  top: 16px;
+  content: " ";
+  width: 8px;
+  height: 8px;
+  background: #fff;
+  font-size: 10px;
+  border-radius: 50px;
+  z-index: 10;
+}
+
+/* line 168, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_footer.scss */
+.pagetop:hover a .line::before {
+  animation-duration: 0.8s;
+  animation-name: pageTopLine;
+}
+
+@keyframes pageTopLine {
+  0% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(-100%);
+    background-color: #fff;
+  }
+  26% {
+    background-color: transparent;
+  }
+  27% {
+    transform: translateY(100%);
+  }
+  40% {
+    background-color: #fff;
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* line 198, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_footer.scss */
+.pagetop:hover a .dot {
+  transform: scale(1.6, 1.6);
+  transition: all 0.4s ease;
+}
+
+/* line 213, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_footer.scss */
+.ff .pagetop a::after {
+  top: 108px;
+}
+
+/* line 217, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_footer.scss */
+.ff .pagetop a .line {
+  top: 36px;
+}
+
+/* line 221, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_footer.scss */
+.ff .pagetop a .dot {
+  top: 28px;
+}
+
+/******************************************************************
+ * TOP
+******************************************************************/
+/* MV
+-----------------------------------------------------------------*/
+/* line 8, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_top.scss */
+html.front .top-body {
+  display: none;
+}
+
+/* line 12, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_top.scss */
+html.front footer {
+  display: none;
+}
+
+/* line 18, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_top.scss */
+.animmv {
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+@media (min-width: 768px) and (max-height: 530px) {
+  /* line 18, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_top.scss */
+  .animmv {
+    height: 530px;
+  }
+}
+
+@media (orientation: portrait) and (max-height: 530px) {
+  /* line 18, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_top.scss */
+  .animmv {
+    height: 530px;
+  }
+}
+
+/* line 31, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_top.scss */
+.animmv__inner {
+  position: fixed;
+  z-index: 10;
+  height: 100vh;
+}
+
+@media (min-width: 768px) and (max-height: 530px) {
+  /* line 31, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_top.scss */
+  .animmv__inner {
+    height: 530px;
+  }
+}
+
+@media (orientation: portrait) and (max-height: 530px) {
+  /* line 31, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_top.scss */
+  .animmv__inner {
+    height: 530px;
+  }
+}
+
+/* line 45, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_top.scss */
+.animmv__white-circle {
+  position: absolute;
+  background-color: #fff;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* line 54, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_top.scss */
+.animmv__white-circle::after {
+  content: "";
+  position: absolute;
+  border: solid 0 var(--primary-color);
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  box-sizing: border-box;
+  transform: translate(-50%, -50%);
+}
+
+@media (orientation: portrait) {
+  /* line 54, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_top.scss */
+  .animmv__white-circle::after {
+    width: 300vh;
+    height: 300vh;
+  }
+}
+
+@media (orientation: landscape) {
+  /* line 54, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_top.scss */
+  .animmv__white-circle::after {
+    width: 300vw;
+    height: 300vw;
+  }
+}
+
+/* line 76, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_top.scss */
+.animmv__white-circle._animating::after {
+  transition: all 3s cubic-bezier(0, 1.07, 0, 0.98) 1.8s;
+}
+
+/* line 82, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_top.scss */
+.animmv__white-circle._animating::after,
+.animmv__white-circle._animated::after {
+  top: 0;
+  left: 100%;
+  transform: translate(-50%, -50%) translate(-30px, 30px);
+}
+
+@media (max-width: 767px) {
+  /* line 82, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_top.scss */
+  .animmv__white-circle._animating::after,
+  .animmv__white-circle._animated::after {
+    transform: translate(-50%, -50%) translate(10px, 0);
+  }
+}
+
+@media (orientation: portrait) {
+  /* line 82, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_top.scss */
+  .animmv__white-circle._animating::after,
+  .animmv__white-circle._animated::after {
+    border: solid 136vh var(--primary-color);
+  }
+}
+
+@media (orientation: landscape) {
+  /* line 82, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_top.scss */
+  .animmv__white-circle._animating::after,
+  .animmv__white-circle._animated::after {
+    border: solid 140vw var(--primary-color);
+  }
+}
+
+@media (orientation: landscape) and (max-width: 1400px) {
+  /* line 82, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_top.scss */
+  .animmv__white-circle._animating::after,
+  .animmv__white-circle._animated::after {
+    border: solid 135vw var(--primary-color);
+  }
+}
+
+/* line 106, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_top.scss */
+.animmv__first-logo {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 100px;
+}
+
+/* line 113, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_top.scss */
+.animmv__first-logo img {
+  opacity: 0;
+}
+
+@media (max-width: 767px) {
+  /* line 113, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_top.scss */
+  .animmv__first-logo img {
+    max-width: 250px;
+  }
+}
+
+/* line 120, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_top.scss */
+.animmv__first-logo img._animating {
+  animation: fadein 1s ease-in-out forwards 0.5s;
+}
+
+/* line 124, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_top.scss */
+.animmv__first-logo img._animated {
+  animation: fadein 0.1s ease-in-out forwards;
+}
+
+/* line 130, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_top.scss */
+.animmv__second-logo {
+  position: absolute;
+  top: 37px;
+  left: 70px;
+  opacity: 0;
+}
+
+@media (max-width: 767px) {
+  /* line 130, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_top.scss */
+  .animmv__second-logo {
+    top: 13px;
+    left: 13px;
+  }
+}
+
+/* line 141, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_top.scss */
+.animmv__second-logo img {
+  width: 398px;
+}
+
+@media (max-width: 1400px) {
+  /* line 141, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_top.scss */
+  .animmv__second-logo img {
+    width: 28vw;
+  }
+}
+
+@media (max-width: 767px) {
+  /* line 141, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_top.scss */
+  .animmv__second-logo img {
+    width: 57vw;
+    max-width: 235px;
+  }
+}
+
+/* line 154, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_top.scss */
+.animmv__second-logo._animating {
+  animation: fadein 1s ease-in-out forwards 3.6s;
+}
+
+/* line 158, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_top.scss */
+.animmv__second-logo._animated {
+  animation: fadein 0.1s ease-in-out forwards;
+}
+
+/* line 163, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_top.scss */
+.animmv .animmv__navToggle {
+  width: 100%;
+  height: 60px;
+  opacity: 0;
+}
+
+/* line 168, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_top.scss */
+.animmv .animmv__navToggle._anim {
+  animation: fadein 1s ease-in-out forwards;
+}
+
+/* line 172, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_top.scss */
+.animmv .animmv__navToggle._animating {
+  animation: fadein 1s ease-in-out forwards 3.6s;
+}
+
+/* line 176, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_top.scss */
+.animmv .animmv__navToggle._animated {
+  animation: fadein 0.1s ease-in-out forwards;
+}
+
+/* line 180, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_top.scss */
+.animmv .animmv__navToggle .navToggle {
+  position: absolute;
+  right: 8px;
+  top: 12px;
+}
+
+/* line 188, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_top.scss */
+.animmv__main {
+  height: 100vh;
+  width: 100vw;
+}
+
+@media (min-width: 768px) and (max-height: 530px) {
+  /* line 188, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_top.scss */
+  .animmv__main {
+    height: 530px;
+  }
+}
+
+@media (orientation: portrait) and (max-height: 530px) {
+  /* line 188, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_top.scss */
+  .animmv__main {
+    height: 530px;
+  }
+}
+
+/* line 201, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_top.scss */
+.animmv__intro {
+  position: absolute;
+  top: 50px;
+  right: 89px;
+  font-weight: bold;
+  opacity: 0;
+}
+
+@media (max-width: 767px) and (orientation: portrait) {
+  /* line 201, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_top.scss */
+  .animmv__intro {
+    font-size: 10px;
+    top: 70%;
+    right: 5.7vw;
+  }
+}
+
+@media (max-width: 767px) and (orientation: landscape) {
+  /* line 201, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_top.scss */
+  .animmv__intro {
+    font-size: 10px;
+    top: 17px;
+    right: 102px;
+  }
+}
+
+/* line 222, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_top.scss */
+.animmv__intro._animating {
+  animation: fadein 1s ease-in-out forwards 3.6s;
+}
+
+/* line 226, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_top.scss */
+.animmv__intro._animated {
+  animation: fadein 0.1s ease-in-out forwards;
+}
+
+/* line 230, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_top.scss */
+.animmv__intro .title {
+  letter-spacing: 6px;
+  border-bottom: 2px solid #000;
+  padding-bottom: 2px;
+  margin-bottom: 12px;
+}
+
+@media (max-width: 767px) {
+  /* line 230, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_top.scss */
+  .animmv__intro .title {
+    letter-spacing: 5px;
+  }
+}
+
+/* line 241, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_top.scss */
+.animmv__intro .en {
+  letter-spacing: 4px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 2;
+}
+
+@media (max-width: 767px) {
+  /* line 241, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_top.scss */
+  .animmv__intro .en {
+    font-size: 2.4vw;
+    letter-spacing: 2px;
+  }
+}
+
+@media (max-width: 767px) and (orientation: landscape) {
+  /* line 241, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_top.scss */
+  .animmv__intro .en {
+    font-size: 1.5vw;
+  }
+}
+
+/* line 259, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_top.scss */
+.animmv__catchcopy {
+  opacity: 0;
+  position: absolute;
+  top: 42%;
+  left: 41.07%;
+  font-size: 42px;
+  font-weight: 600;
+  letter-spacing: 0.25em;
+  height: 3.6em;
+  width: calc(1.25em * 15);
+  transform: translate(-50%, -50%);
+}
+
+/* line 271, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_top.scss */
+.animmv__catchcopy br.sp {
+  display: none;
+}
+
+@media (max-width: 1400px) {
+  /* line 259, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_top.scss */
+  .animmv__catchcopy {
+    font-size: 3vw;
+  }
+}
+
+@media (max-width: 767px) {
+  /* line 280, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_top.scss */
+  .animmv__catchcopy br.sp {
+    display: inline;
+  }
+}
+
+@media (max-width: 767px) and (orientation: portrait) {
+  /* line 259, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_top.scss */
+  .animmv__catchcopy {
+    width: calc(1.3em * 11.5);
+    padding-left: 0.5em;
+    height: 5.4em;
+    top: 26.25%;
+    left: 50%;
+    font-size: 22px;
+    letter-spacing: 0.3em;
+  }
+}
+
+@media (max-width: 400px) and (orientation: portrait) {
+  /* line 259, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_top.scss */
+  .animmv__catchcopy {
+    font-size: 5.86vw;
+  }
+}
+
+@media (orientation: landscape) and (max-width: 767px) {
+  /* line 259, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_top.scss */
+  .animmv__catchcopy {
+    font-size: 3.2vw;
+    top: 35vh;
+  }
+}
+
+/* line 306, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_top.scss */
+.animmv__catchcopy p {
+  position: relative;
+}
+
+
+
+
+
+/* line 357, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_top.scss */
+.animmv__catchcopy span {
+  opacity: 0;
+  transition: opacity 0.6s ease;
+}
+
+/* line 362, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_top.scss */
+.animmv__catchcopy span.dot {
+  position: relative;
+}
+
+
+
+/* line 375, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_top.scss */
+.animmv__illust {
+  position: absolute;
+  right: 46.57%;
+  top: 55%;
+  opacity: 0;
+  pointer-events: none;
+  transform: translate(50%, -50%);
+  width: 937px;
+}
+
+@media (max-width: 1400px) {
+  /* line 375, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_top.scss */
+  .animmv__illust {
+    width: 67%;
+  }
+}
+
+@media (max-width: 767px) and (orientation: portrait) {
+  /* line 375, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_top.scss */
+  .animmv__illust {
+    top: 52.83%;
+    right: 50%;
+    width: 70vw;
+  }
+}
+
+@media (max-width: 767px) and (orientation: landscape) {
+  /* line 375, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_top.scss */
+  .animmv__illust {
+    top: 58%;
+    right: 38%;
+    width: 53%;
+  }
+}
+
+@media (max-width: 400px) and (orientation: portrait) {
+  /* line 375, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_top.scss */
+  .animmv__illust {
+    width: 87.5vw;
+  }
+}
+
+/* line 408, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_top.scss */
+.animmv__illust._animating {
+  animation: fadein 1s ease-in-out forwards 3.6s;
+}
+
+/* line 412, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_top.scss */
+.animmv__illust._animated {
+  animation: fadein 0.1s ease-in-out forwards;
+}
+
+/* line 416, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_top.scss */
+.animmv__illust img {
+  width: 937px;
+}
+
+@media (max-width: 1400px) {
+  /* line 416, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_top.scss */
+  .animmv__illust img {
+    width: 67vw;
+  }
+}
+
+@media (max-width: 767px) and (orientation: portrait) {
+  /* line 416, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_top.scss */
+  .animmv__illust img {
+    width: 100%;
+  }
+}
+
+/* line 431, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_top.scss */
+.animmv__scroll {
+  position: absolute;
+  bottom: 59px;
+  left: 78px;
+  text-align: center;
+  opacity: 0;
+  width: 24px;
+  /* 線 */
+  /* 矢印アイコン */
+}
+
+@media (max-width: 767px) {
+  /* line 431, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_top.scss */
+  .animmv__scroll {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 18px;
+  }
+}
+
+@media (max-width: 767px) and (orientation: portrait) {
+  /* line 431, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_top.scss */
+  .animmv__scroll {
+    height: 17.5%;
+    left: 5.7vw;
+    bottom: 12%;
+  }
+}
+
+@media (max-width: 767px) and (orientation: landscape) {
+  /* line 431, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_top.scss */
+  .animmv__scroll {
+    height: 34.5%;
+    left: 20px;
+    bottom: 20px;
+  }
+}
+
+/* line 458, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_top.scss */
+.animmv__scroll._animating {
+  animation: fadein 1s ease-in-out forwards 3.6s;
+}
+
+/* line 462, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_top.scss */
+.animmv__scroll._animated {
+  animation: fadein 0.1s ease-in-out forwards;
+}
+
+/* line 467, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_top.scss */
+.animmv__scroll::before {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 75px;
+  left: calc(50% - 1px);
+  height: 58px;
+  border-right: solid 1px #000;
+  animation: scroll-line-animation 3s infinite ease-in-out;
+}
+
+@media (max-width: 767px) {
+  /* line 467, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_top.scss */
+  .animmv__scroll::before {
+    top: 69px;
+    height: 20%;
+  }
+}
+
+@keyframes scroll-line-animation {
+  0% {
+    transform: translateY(-10px);
+    opacity: 0;
+  }
+  25% {
+    transform: translateY(5px);
+    opacity: 1;
+  }
+  75% {
+    transform: translateY(-5px);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(10px);
+    opacity: 0;
+  }
+}
+
+/* line 491, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_top.scss */
+.animmv__scroll::after {
+  content: "";
+  display: block;
+  width: 24px;
+  height: 24px;
+  background: url("img/common/scroll_arrow.png") center/contain no-repeat;
+}
+
+@media (max-width: 767px) {
+  /* line 491, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_top.scss */
+  .animmv__scroll::after {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+/* line 504, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_top.scss */
+.animmv__scroll-text {
+  -webkit-writing-mode: vertical-rl;
+  -ms-writing-mode: tb-rl;
+  writing-mode: vertical-rl;
+  display: inline-block;
+  font: bold 10px "Montserrat", sans-serif;
+  letter-spacing: 0.3em;
+  margin-bottom: 83px;
+  width: 12px;
+}
+
+@media (max-width: 767px) {
+  /* line 504, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_top.scss */
+  .animmv__scroll-text {
+    margin-bottom: 0;
+  }
+}
+
+/* line 520, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_top.scss */
+.animmv__contact {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  z-index: 100;
+  opacity: 0;
+}
+
+@media (orientation: portrait) and (max-width: 767px) {
+  /* line 520, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_top.scss */
+  .animmv__contact {
+    width: 100%;
+    padding: 15px 5.7vw;
+  }
+}
+
+/* line 535, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_top.scss */
+.animmv__contact._animating {
+  animation: fadein 1s ease-in-out forwards 3.6s;
+}
+
+/* line 539, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_top.scss */
+.animmv__contact._animated {
+  animation: fadein 0.1s ease-in-out forwards;
+}
+
+/* line 543, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_top.scss */
+.animmv__contact a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  color: #fff;
+  font-weight: bold;
+  padding: 16px 0;
+  width: 200px;
+  background: #f66e6e
+  border-radius: 6px 0 0 0;
+  z-index: 200;
+}
+
+@media (orientation: portrait) and (max-width: 767px) {
+  /* line 543, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_top.scss */
+  .animmv__contact a {
+    width: 100%;
+    font-size: 15px;
+    border-radius: 6px;
+    height: 48px;
+  }
+}
+
+@media (orientation: landscape) and (max-width: 767px) {
+  /* line 543, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_top.scss */
+  .animmv__contact a {
+    font-size: 2.5vw;
+    height: 7.8vw;
+  }
+}
+
+/* line 570, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_top.scss */
+.animmv__contact a img {
+  width: 24px;
+  margin-left: 4px;
+}
+
+/* line 575, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_top.scss */
+.animmv__contact a:hover {
+  background: #147f14;
+  transition: all 0.4s ease;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* line 596, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_top.scss */
+.top-body {
+  background-color: #edf7ff;
+  position: relative;
+  z-index: 98;
+}
+
+/* top-about
+-----------------------------------------------------------------*/
+/* line 606, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_top.scss */
+.top-about {
+  padding: 120px 0 60px;
+}
+
+@media (max-width: 640px) {
+  /* line 606, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_top.scss */
+  .top-about {
+    padding: 60px 0 0;
+  }
+}
+
+/* line 613, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_top.scss */
+.top-about .inner {
+  text-align: center;
+}
+
+/* line 616, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_top.scss */
+.top-about .inner h2 {
+  font-size: 22px;
+  letter-spacing: 8px;
+  margin-bottom: 60px;
+}
+
+@media (max-width: 640px) {
+  /* line 616, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_top.scss */
+  .top-about .inner h2 {
+    font-size: 18px;
+    margin-bottom: 0;
+  }
+}
+
+/* line 628, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_top.scss */
+.top-about .inner .about-wrap {
+  padding: 60px 0;
+}
+
+@media (max-width: 640px) {
+  /* line 628, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_top.scss */
+  .top-about .inner .about-wrap {
+    padding-bottom: 20px;
+  }
+}
+
+/* line 635, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_top.scss */
+.top-about .inner .about-wrap .item {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: left;
+  margin-bottom: 120px;
+}
+
+@media (max-width: 640px) {
+  /* line 635, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_top.scss */
+  .top-about .inner .about-wrap .item {
+    display: block;
+  }
+}
+
+@media (min-width: 641px) {
+  /* line 647, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_top.scss */
+  .top-about .inner .about-wrap .item.sp {
+    display: none;
+  }
+}
+
+@media (max-width: 640px) {
+  /* line 653, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_top.scss */
+  .top-about .inner .about-wrap .item.pc {
+    display: none;
+  }
+}
+
+/* line 659, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_top.scss */
+.top-about .inner .about-wrap .item .item-img {
+  width: 50%;
+}
+
+@media (max-width: 640px) {
+  /* line 659, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_top.scss */
+  .top-about .inner .about-wrap .item .item-img {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+}
+
+/* line 668, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_top.scss */
+.top-about .inner .about-wrap .item .item-img img {
+  width: 80%;
+}
+
+/* line 672, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_top.scss */
+.top-about .inner .about-wrap .item .item-img.img-wrap {
+  overflow: hidden;
+  position: relative;
+}
+
+/* line 676, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_top.scss */
+.top-about .inner .about-wrap .item .item-img.img-wrap::before {
+  animation: img-wrap 2s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+  background: #edf7ff;
+  bottom: 0;
+  content: "";
+  left: 0;
+  pointer-events: none;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 1;
+}
+
+@keyframes img-wrap {
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+/* line 695, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_top.scss */
+.top-about .inner .about-wrap .item .item-img.img-wrap.img-animation {
+  animation: img-opacity 1.8s cubic-bezier(0.4, 0, 0.2, 1);
+  overflow: hidden;
+  position: relative;
+}
+
+@keyframes img-opacity {
+  0% {
+    opacity: 0;
+  }
+}
+
+/* line 706, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_top.scss */
+.top-about .inner .about-wrap .item .item-img.img-wrap.img-animation::before {
+  animation: img-animation 1.8s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+  background: #edf7ff;
+  bottom: 0;
+  content: "";
+  left: 0;
+  pointer-events: none;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 1;
+}
+
+@keyframes img-animation {
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+/* line 729, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_top.scss */
+.top-about .inner .about-wrap .item .item-text {
+  width: 48%;
+}
+
+@media (max-width: 640px) {
+  /* line 729, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_top.scss */
+  .top-about .inner .about-wrap .item .item-text {
+    width: 100%;
+  }
+}
+
+/* line 736, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_top.scss */
+.top-about .inner .about-wrap .item .item-text h3 {
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 1.6;
+  letter-spacing: 6px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 640px) {
+  /* line 736, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_top.scss */
+  .top-about .inner .about-wrap .item .item-text h3 {
+    font-size: 23px;
+    letter-spacing: 4px;
+  }
+}
+
+/* line 750, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_top.scss */
+.top-about .inner .about-wrap .item .item-text .section-text {
+  margin-bottom: 40px;
+}
+
+@media (max-width: 640px) {
+  /* line 755, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_top.scss */
+  .top-about .inner .about-wrap .item .item-text .btn-s {
+    margin: 0 auto;
+  }
+  /* line 758, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_top.scss */
+  .top-about .inner .about-wrap .item .item-text .btn-s a {
+    font-size: 16px;
+  }
+}
+
+/* line 766, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_top.scss */
+.top-about .inner .about-wrap .item.reverse {
+  flex-direction: row-reverse;
+}
+
+/* line 770, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_top.scss */
+.top-about .inner .about-wrap .item:last-child {
+  margin-bottom: 0;
+}
+
+/* top-news
+-----------------------------------------------------------------*/
+/* line 784, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_top.scss */
+.top-news {
+  padding: 60px 0;
+}
+
+@media (max-width: 640px) {
+  /* line 784, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_top.scss */
+  .top-news {
+    padding-bottom: 0;
+  }
+}
+
+/* line 791, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_top.scss */
+.top-news .news-box {
+  position: relative;
+  background: #fff;
+  padding: 60px 60px 50px 60px;
+  border-radius: 20px;
+}
+
+@media (max-width: 999px) {
+  /* line 791, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_top.scss */
+  .top-news .news-box {
+    padding: 40px 20px 24px 20px;
+  }
+}
+
+@media (max-width: 640px) {
+  /* line 791, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_top.scss */
+  .top-news .news-box {
+    padding: 30px 20px 24px 20px;
+  }
+}
+
+/* line 806, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_top.scss */
+.top-news .news-box a .news-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+  border-bottom: 2px solid #f0f0f0;
+  padding-bottom: 16px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 640px) {
+  /* line 806, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_top.scss */
+  .top-news .news-box a .news-item {
+    align-items: flex-start;
+  }
+}
+
+/* line 819, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_top.scss */
+.top-news .news-box a .news-item .news-txt {
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 889px) {
+  /* line 819, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_top.scss */
+  .top-news .news-box a .news-item .news-txt {
+    display: block;
+  }
+}
+
+/* line 827, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_top.scss */
+.top-news .news-box a .news-item .news-txt .dc {
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 889px) {
+  /* line 827, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_top.scss */
+  .top-news .news-box a .news-item .news-txt .dc {
+    margin-bottom: 12px;
+  }
+}
+
+/* line 835, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_top.scss */
+.top-news .news-box a .news-item .news-txt .dc .date {
+  width: 100px;
+  font-weight: bold;
+  color: var(--primary-color);
+  margin-right: 20px;
+}
+
+@media (max-width: 999px) {
+  /* line 835, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_top.scss */
+  .top-news .news-box a .news-item .news-txt .dc .date {
+    margin-right: 10px;
+  }
+}
+
+/* line 847, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_top.scss */
+.top-news .news-box a .news-item .news-txt .dc .cat {
+  width: 104px;
+  background: #000;
+  font-size: 12px;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+  padding: 2px 0;
+  margin-right: 30px;
+}
+
+@media (max-width: 999px) {
+  /* line 847, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_top.scss */
+  .top-news .news-box a .news-item .news-txt .dc .cat {
+    margin-right: 14px;
+  }
+}
+
+@media (max-width: 640px) {
+  /* line 847, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_top.scss */
+  .top-news .news-box a .news-item .news-txt .dc .cat {
+    width: 90px;
+    font-size: 10px;
+    padding: 0;
+  }
+}
+
+/* line 872, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_top.scss */
+.top-news .news-box a .news-item .btn {
+  position: relative;
+}
+
+@media (max-width: 640px) {
+  /* line 872, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_top.scss */
+  .top-news .news-box a .news-item .btn {
+    padding-top: 12px;
+  }
+}
+
+/* line 879, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_top.scss */
+.top-news .news-box a .news-item .btn::after {
+  position: absolute;
+  top: -11px;
+  right: 5px;
+  content: " ";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+  background: #edf7ff;
+  border-radius: 50px;
+  transition: all 0.4s ease;
+}
+
+@media (max-width: 640px) {
+  /* line 879, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_top.scss */
+  .top-news .news-box a .news-item .btn::after {
+    top: 1px;
+  }
+}
+
+/* line 900, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_top.scss */
+.top-news .news-box a .news-item .btn .line {
+  position: absolute;
+  height: 2px;
+  width: 30px;
+  right: 16px;
+  z-index: 10;
+  overflow: hidden;
+}
+
+/* line 908, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_top.scss */
+.top-news .news-box a .news-item .btn .line::before {
+  width: 30px;
+  height: 2px;
+  content: " ";
+  background: #000;
+  display: block;
+}
+
+/* line 917, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_top.scss */
+.top-news .news-box a .news-item .btn .dot {
+  position: absolute;
+  right: 12px;
+  top: -4px;
+  content: " ";
+  width: 10px;
+  height: 10px;
+  background: #000;
+  font-size: 10px;
+  border-radius: 50px;
+  z-index: 10;
+}
+
+@media (max-width: 640px) {
+  /* line 917, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_top.scss */
+  .top-news .news-box a .news-item .btn .dot {
+    top: 8px;
+  }
+}
+
+/* line 943, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_top.scss */
+.top-news .news-box a:hover .news-item .btn::after {
+  transform: scale(1.5, 1.5);
+  transition: all 0.4s ease;
+}
+
+/* line 950, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_top.scss */
+.top-news .news-box a:hover .news-item .btn .line::before {
+  animation-duration: 0.8s;
+  animation-name: btnLine;
+}
+
+@keyframes btnLine {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(100%);
+    background-color: #000;
+  }
+  26% {
+    background-color: transparent;
+  }
+  27% {
+    transform: translateX(-100%);
+  }
+  40% {
+    background-color: #000;
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* line 986, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_top.scss */
+.top-news .news-box .view {
+  position: absolute;
+  right: 60px;
+  width: 100px;
+  font-weight: bold;
+  text-align: right;
+  padding-right: 20px;
+  margin-right: 0;
+  margin-left: auto;
+}
+
+@media (max-width: 999px) {
+  /* line 986, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_top.scss */
+  .top-news .news-box .view {
+    right: 22px;
+    bottom: 10px;
+  }
+}
+
+@media (max-width: 640px) {
+  /* line 986, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_top.scss */
+  .top-news .news-box .view {
+    right: 20px;
+    bottom: 14px;
+  }
+}
+
+/* line 1007, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_top.scss */
+.top-news .news-box .view a::after {
+  position: absolute;
+  top: 4px;
+  content: " ";
+  width: 14px;
+  height: 14px;
+  background: url("img/top/top_news_dot.png") center no-repeat;
+  background-size: contain;
+  margin-left: 6px;
+  transition: all 0.4s ease;
+}
+
+/* line 1024, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_top.scss */
+.top-news .news-box .view:hover a::after {
+  transform: scale(1.5);
+  transition: all 0.4s ease;
+}
+
+/* top-access
+-----------------------------------------------------------------*/
+/* line 1042, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_top.scss */
+.top-access-title {
+  padding: 60px 0 0;
+}
+
+/* line 1045, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_top.scss */
+.top-access-title .section-text {
+  text-align: center;
+}
+
+/* line 1051, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_top.scss */
+.top-access {
+  padding: 60px 0;
+}
+
+@media (max-width: 640px) {
+  /* line 1051, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_top.scss */
+  .top-access {
+    padding-bottom: 60px;
+  }
+}
+
+/* line 1058, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_top.scss */
+.top-access iframe {
+  width: 100%;
+  height: 580px;
+  margin-bottom: 40px;
+}
+
+@media (max-width: 640px) {
+  /* line 1058, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_top.scss */
+  .top-access iframe {
+    height: 300px;
+  }
+}
+
+/* line 1070, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_top.scss */
+.top-access .wrapper .header {
+  z-index: 50;
+}
+
+/******************************************************************
+ * 下層ページ共通部分
+******************************************************************/
+/* MV
+-----------------------------------------------------------------*/
+/* line 8, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_page.scss */
+.mv-sub {
+  position: relative;
+  text-align: center;
+  padding: 180px 0 100px;
+}
+
+@media (max-width: 1079px) {
+  /* line 8, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_page.scss */
+  .mv-sub {
+    padding: 140px 0 50px;
+    transition: all 0.4s ease;
+  }
+}
+
+@media (max-width: 767px) {
+  /* line 8, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_page.scss */
+  .mv-sub {
+    padding: 110px 0 100px;
+  }
+}
+
+/* line 22, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_page.scss */
+.mv-sub h2 {
+  font-size: 46px;
+  font-weight: bold;
+  letter-spacing: 16px;
+}
+
+/* line 27, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_page.scss */
+.mv-sub h2 span {
+  position: relative;
+}
+
+/* line 30, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_page.scss */
+.mv-sub h2 span::after {
+  content: "";
+  position: absolute;
+  background-color: #edf7ff;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: left 0.5s ease;
+}
+
+/* line 43, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_page.scss */
+.mv-sub h2._anim span::after {
+  left: 100%;
+  transition: left 0.5s ease;
+}
+
+@media (max-width: 1079px) {
+  /* line 22, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_page.scss */
+  .mv-sub h2 {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 767px) {
+  /* line 22, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_page.scss */
+  .mv-sub h2 {
+    position: absolute;
+    left: 0;
+    right: 0;
+    font-size: 30px;
+    z-index: 10;
+  }
+}
+
+@media (max-width: 640px) {
+  /* line 22, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_page.scss */
+  .mv-sub h2 {
+    font-size: 24px;
+  }
+}
+
+/* line 67, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_page.scss */
+.mv-sub p {
+  position: absolute;
+  top: 0;
+  right: -40px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 64px;
+  font-weight: bold;
+  color: #fff;
+  line-height: 2.5;
+  letter-spacing: 40px;
+  text-transform: uppercase;
+}
+
+/* line 79, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_page.scss */
+.mv-sub p::after {
+  content: "";
+  position: absolute;
+  background-color: #edf7ff;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: left 0.5s ease;
+}
+
+/* line 91, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_page.scss */
+.mv-sub p._anim::after {
+  left: 100%;
+  transition: left 0.5s ease;
+}
+
+@media (max-width: 1079px) {
+  /* line 67, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_page.scss */
+  .mv-sub p {
+    right: -32px;
+    font-size: 44px;
+    line-height: 2;
+    letter-spacing: 32px;
+  }
+}
+
+@media (max-width: 767px) {
+  /* line 67, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_page.scss */
+  .mv-sub p {
+    top: 128px;
+    right: 0;
+    left: 0;
+    font-size: 30px;
+    line-height: 1.6;
+    letter-spacing: 28px;
+    z-index: 0;
+  }
+}
+
+@media (max-width: 640px) {
+  /* line 67, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_page.scss */
+  .mv-sub p {
+    font-size: 24px;
+  }
+}
+
+/* 下層お問い合わせ
+-----------------------------------------------------------------*/
+/* line 124, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_page.scss */
+.sub-map {
+  padding: 0 0 120px;
+}
+
+@media (max-width: 640px) {
+  /* line 124, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_page.scss */
+  .sub-map {
+    padding-top: 0;
+    padding-bottom: 60px;
+  }
+}
+
+/* line 132, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_page.scss */
+.sub-map iframe {
+  width: 100%;
+  height: 580px;
+  margin-bottom: 40px;
+}
+
+@media (max-width: 640px) {
+  /* line 132, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_page.scss */
+  .sub-map iframe {
+    height: 300px;
+  }
+}
+
+/* line 143, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_page.scss */
+.sub-map .btn-l {
+  margin-top: 130px;
+}
+
+/* タブ・切り替え動作
+-----------------------------------------------------------------*/
+/* line 151, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_page.scss */
+.tabContent {
+  display: none;
+  padding-top: 40px;
+  margin-top: -40px;
+}
+
+@media (max-width: 767px) {
+  /* line 151, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_page.scss */
+  .tabContent {
+    padding-top: 70px;
+    margin-top: -70px;
+  }
+}
+
+/* line 161, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_page.scss */
+.tabContent .btn-s {
+  margin: 0 auto;
+}
+
+@media (max-width: 640px) {
+  /* line 161, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_page.scss */
+  .tabContent .btn-s {
+    margin-bottom: 40px;
+  }
+}
+
+/* line 170, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_page.scss */
+.tabContent section {
+  margin-bottom: 120px;
+}
+
+@media (max-width: 640px) {
+  /* line 170, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_page.scss */
+  .tabContent section {
+    margin-bottom: 40px;
+  }
+}
+
+/* line 177, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_page.scss */
+.tabContent section:last-child {
+  margin-bottom: 0;
+}
+
+/* line 184, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_page.scss */
+.tab-box {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-bottom: 140px;
+}
+
+@media (max-width: 640px) {
+  /* line 184, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_page.scss */
+  .tab-box {
+    margin-bottom: 80px;
+  }
+}
+
+/* line 194, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_page.scss */
+.tab-box .tabBtn {
+  width: 432px;
+  background: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 4px;
+  border: 4px solid #fff;
+  border-radius: 10px;
+  padding: 14px 0;
+  margin: 0 8px;
+  cursor: pointer;
+}
+
+@media (max-width: 1079px) {
+  /* line 194, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_page.scss */
+  .tab-box .tabBtn {
+    width: 280px;
+  }
+}
+
+@media (max-width: 640px) {
+  /* line 194, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_page.scss */
+  .tab-box .tabBtn {
+    width: 220px;
+    font-size: 16px;
+    margin: 0 4px;
+  }
+}
+
+@media (max-width: 454px) {
+  /* line 194, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_page.scss */
+  .tab-box .tabBtn {
+    width: 170px;
+  }
+}
+
+@media (max-width: 353px) {
+  /* line 194, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_page.scss */
+  .tab-box .tabBtn {
+    width: 154px;
+    font-size: 14px;
+    padding: 6px 0;
+  }
+}
+
+/* line 227, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_page.scss */
+.tab-box .tabBtn::before {
+  position: absolute;
+  content: " ";
+  width: 100vw;
+  top: 442px;
+  left: 0;
+  height: 4px;
+  background: #fff;
+  z-index: 97;
+}
+
+@media (max-width: 1079px) {
+  /* line 227, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_page.scss */
+  .tab-box .tabBtn::before {
+    top: 327px;
+  }
+}
+
+@media (max-width: 767px) {
+  /* line 227, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_page.scss */
+  .tab-box .tabBtn::before {
+    top: 290px;
+  }
+}
+
+@media (max-width: 640px) {
+  /* line 227, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_page.scss */
+  .tab-box .tabBtn::before {
+    top: 282px;
+  }
+}
+
+@media (max-width: 454px) {
+  /* line 227, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_page.scss */
+  .tab-box .tabBtn::before {
+    top: 280px;
+  }
+}
+
+@media (max-width: 353px) {
+  /* line 227, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_page.scss */
+  .tab-box .tabBtn::before {
+    top: 261px;
+  }
+}
+
+/* line 259, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_page.scss */
+.tab-box .tabBtn.is-active {
+  position: relative;
+  background: #edf7ff;
+  border-bottom: none;
+  border-radius: 10px 10px 0 0;
+}
+
+/* line 265, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_page.scss */
+.tab-box .tabBtn.is-active::before {
+  content: none;
+}
+
+/* line 269, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_page.scss */
+.tab-box .tabBtn.is-active::after {
+  position: absolute;
+  left: -9px;
+  bottom: -20px;
+  content: " ";
+  width: 443px;
+  height: 22px;
+  background: url("img/common/tab_bg_l.png") left no-repeat,
+    url("img/common/tab_bg_r.png") right no-repeat #edf7ff;
+  background-size: contain;
+  z-index: 98;
+}
+
+@media (max-width: 1079px) {
+  /* line 269, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_page.scss */
+  .tab-box .tabBtn.is-active::after {
+    width: 291px;
+  }
+}
+
+@media (max-width: 640px) {
+  /* line 269, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_page.scss */
+  .tab-box .tabBtn.is-active::after {
+    width: 231px;
+    bottom: -16px;
+  }
+}
+
+@media (max-width: 454px) {
+  /* line 269, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_page.scss */
+  .tab-box .tabBtn.is-active::after {
+    width: 181px;
+    bottom: -14px;
+  }
+}
+
+@media (max-width: 353px) {
+  /* line 269, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_page.scss */
+  .tab-box .tabBtn.is-active::after {
+    width: 165px;
+  }
+}
+
+@media (max-width: 353px) {
+  /* line 269, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_page.scss */
+  .tab-box .tabBtn.is-active::after {
+    width: 163px;
+  }
+}
+
+/* line 304, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_page.scss */
+.tab-box .tabBtn.is-active a {
+  position: relative;
+  border-bottom: 3px solid #000;
+  padding-bottom: 6px;
+}
+
+/* line 309, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_page.scss */
+.tab-box .tabBtn.is-active a::after {
+  position: absolute;
+  content: " ";
+  left: 0;
+  right: 0;
+  top: 27px;
+  margin: auto;
+  background: url(img/common/tab_arrow.png) no-repeat;
+  background-size: contain;
+  width: 28px;
+  height: 78px;
+  z-index: 99;
+}
+
+@media (max-width: 767px) {
+  /* line 309, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_page.scss */
+  .tab-box .tabBtn.is-active a::after {
+    z-index: 99;
+  }
+}
+
+/* line 331, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_page.scss */
+.tab-box .tabBtn a.disabled {
+  pointer-events: none;
+}
+
+@media (max-width: 1127px) {
+  /* line 337, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_page.scss */
+  .tab-box.tri {
+    margin-bottom: 120px;
+  }
+}
+
+@media (max-width: 640px) {
+  /* line 337, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_page.scss */
+  .tab-box.tri {
+    margin-bottom: 100px;
+  }
+}
+
+/* line 346, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_page.scss */
+.tab-box.tri .tabBtn {
+  width: 300px;
+}
+
+@media (max-width: 1127px) {
+  /* line 346, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_page.scss */
+  .tab-box.tri .tabBtn {
+    width: 250px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 969px) {
+  /* line 346, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_page.scss */
+  .tab-box.tri .tabBtn {
+    width: 180px;
+    padding: 6px 0;
+    margin: 0 4px;
+  }
+}
+
+@media (max-width: 640px) {
+  /* line 346, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_page.scss */
+  .tab-box.tri .tabBtn {
+    width: 140px;
+    font-size: 14px;
+    line-height: 1.5;
+    padding: 12px 0;
+  }
+}
+
+@media (max-width: 474px) {
+  /* line 346, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_page.scss */
+  .tab-box.tri .tabBtn {
+    width: 120px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 383px) {
+  /* line 346, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_page.scss */
+  .tab-box.tri .tabBtn {
+    width: 106px;
+  }
+}
+
+@media (max-width: 320px) {
+  /* line 346, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_page.scss */
+  .tab-box.tri .tabBtn {
+    width: 100px;
+    font-size: 10px;
+    padding: 10px 0;
+  }
+}
+
+/* line 382, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_page.scss */
+.tab-box.tri .tabBtn::before {
+  top: 996px;
+  z-index: 96;
+}
+
+@media (max-width: 1127px) {
+  /* line 382, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_page.scss */
+  .tab-box.tri .tabBtn::before {
+    top: 1014px;
+  }
+}
+
+@media (max-width: 1079px) {
+  /* line 382, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_page.scss */
+  .tab-box.tri .tabBtn::before {
+    top: 899px;
+  }
+}
+
+@media (max-width: 969px) {
+  /* line 382, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_page.scss */
+  .tab-box.tri .tabBtn::before {
+    top: 904px;
+  }
+}
+
+@media (max-width: 767px) {
+  /* line 382, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_page.scss */
+  .tab-box.tri .tabBtn::before {
+    top: 867px;
+  }
+}
+
+@media (max-width: 640px) {
+  /* line 382, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_page.scss */
+  .tab-box.tri .tabBtn::before {
+    top: 1539px;
+  }
+}
+
+@media (max-width: 551px) {
+  /* line 382, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_page.scss */
+  .tab-box.tri .tabBtn::before {
+    top: 1567px;
+  }
+}
+
+@media (max-width: 550px) {
+  /* line 382, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_page.scss */
+  .tab-box.tri .tabBtn::before {
+    top: 1595px;
+  }
+}
+
+@media (max-width: 516px) {
+  /* line 382, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_page.scss */
+  .tab-box.tri .tabBtn::before {
+    top: 1623px;
+  }
+}
+
+@media (max-width: 474px) {
+  /* line 382, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_page.scss */
+  .tab-box.tri .tabBtn::before {
+    top: 1617px;
+  }
+}
+
+@media (max-width: 432px) {
+  /* line 382, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_page.scss */
+  .tab-box.tri .tabBtn::before {
+    top: 1645px;
+  }
+}
+
+@media (max-width: 430px) {
+  /* line 382, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_page.scss */
+  .tab-box.tri .tabBtn::before {
+    top: 1673px;
+  }
+}
+
+@media (max-width: 399px) {
+  /* line 382, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_page.scss */
+  .tab-box.tri .tabBtn::before {
+    top: 1701px;
+  }
+}
+
+@media (max-width: 320px) {
+  /* line 382, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_page.scss */
+  .tab-box.tri .tabBtn::before {
+    top: 1775px;
+  }
+}
+
+/* line 441, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_page.scss */
+.tab-box.tri .tabBtn.is-active::after {
+  bottom: -16px;
+  width: 311px;
+  z-index: 97;
+}
+
+@media (max-width: 1127px) {
+  /* line 441, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_page.scss */
+  .tab-box.tri .tabBtn.is-active::after {
+    bottom: -14px;
+    width: 261px;
+  }
+}
+
+@media (max-width: 969px) {
+  /* line 441, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_page.scss */
+  .tab-box.tri .tabBtn.is-active::after {
+    bottom: -6px;
+    width: 191px;
+  }
+}
+
+@media (max-width: 640px) {
+  /* line 441, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_page.scss */
+  .tab-box.tri .tabBtn.is-active::after {
+    width: 151px;
+  }
+}
+
+@media (max-width: 474px) {
+  /* line 441, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_page.scss */
+  .tab-box.tri .tabBtn.is-active::after {
+    width: 131px;
+  }
+}
+
+@media (max-width: 383px) {
+  /* line 441, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_page.scss */
+  .tab-box.tri .tabBtn.is-active::after {
+    width: 117px;
+  }
+}
+
+@media (max-width: 320px) {
+  /* line 441, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_page.scss */
+  .tab-box.tri .tabBtn.is-active::after {
+    width: 110px;
+  }
+}
+
+@media (max-width: 969px) {
+  /* line 474, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_page.scss */
+  .tab-box.tri .tabBtn.is-active a {
+    display: inline-block;
+    z-index: 98;
+  }
+}
+
+@media (max-width: 969px) {
+  /* line 480, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_page.scss */
+  .tab-box.tri .tabBtn.is-active a::after {
+    top: 62px;
+  }
+}
+
+@media (max-width: 640px) {
+  /* line 480, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_page.scss */
+  .tab-box.tri .tabBtn.is-active a::after {
+    top: 50px;
+  }
+}
+
+@media (max-width: 474px) {
+  /* line 480, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_page.scss */
+  .tab-box.tri .tabBtn.is-active a::after {
+    top: 42px;
+  }
+}
+
+@media (min-width: 970px) {
+  /* line 499, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_page.scss */
+  .tab-box.tri .tabBtn a br {
+    display: none;
+  }
+}
+
+@media (max-width: 969px) {
+  /* line 499, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_page.scss */
+  .tab-box.tri .tabBtn a br {
+    display: block;
+  }
+}
+
+/* Parts
+-----------------------------------------------------------------*/
+/* line 520, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_page.scss */
+.heading-title {
+  position: relative;
+  background: var(--primary-color);
+  font-size: 32px;
+  font-weight: bold;
+  letter-spacing: 8px;
+  border-radius: 12px;
+  padding: 10px 0 10px 60px;
+  margin-bottom: 60px;
+}
+
+@media (max-width: 999px) {
+  /* line 520, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_page.scss */
+  .heading-title {
+    font-size: 24px;
+    padding: 4px 0 4px 40px;
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 640px) {
+  /* line 520, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_page.scss */
+  .heading-title {
+    font-size: 22px;
+    border-radius: 6px;
+    padding: 4px 0 4px 30px;
+  }
+}
+
+/* line 542, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_page.scss */
+.heading-title::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: " ";
+  width: 25px;
+  height: 77px;
+  background: #000;
+  border-radius: 12px 0 0 12px;
+}
+
+@media (max-width: 999px) {
+  /* line 542, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_page.scss */
+  .heading-title::before {
+    width: 18px;
+    height: 54px;
+  }
+}
+
+@media (max-width: 640px) {
+  /* line 542, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_page.scss */
+  .heading-title::before {
+    width: 14px;
+    height: 47px;
+    border-radius: 6px 0 0 6px;
+  }
+}
+
+@media (max-width: 640px) {
+  /* line 565, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_page.scss */
+  .heading-title span {
+    font-size: 14px;
+  }
+}
+
+/* line 572, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_page.scss */
+.section-title {
+  display: inline-block;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 1.5;
+  letter-spacing: 4px;
+  border-bottom: 4px solid #000;
+  padding-bottom: 2px;
+  margin-bottom: 50px;
+}
+
+@media (max-width: 999px) {
+  /* line 572, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_page.scss */
+  .section-title {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 640px) {
+  /* line 572, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_page.scss */
+  .section-title {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 320px) {
+  /* line 572, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_page.scss */
+  .section-title {
+    font-size: 16px;
+  }
+}
+
+/* line 595, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_page.scss */
+.section-title span {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+}
+
+@media (max-width: 640px) {
+  /* line 595, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_page.scss */
+  .section-title span {
+    font-size: 12px;
+  }
+}
+
+/* line 603, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_page.scss */
+.section-title span.alpha {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 36px;
+  height: 36px;
+  background: #000;
+  font-size: 18px;
+  color: #fff;
+  letter-spacing: 0;
+  border-radius: 6px;
+}
+
+@media (max-width: 999px) {
+  /* line 603, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_page.scss */
+  .section-title span.alpha {
+    top: -2px;
+  }
+}
+
+@media (max-width: 640px) {
+  /* line 603, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_page.scss */
+  .section-title span.alpha {
+    top: -6px;
+    width: 30px;
+    height: 30px;
+    font-size: 16px;
+  }
+}
+
+/* line 636, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_page.scss */
+.section-box {
+  position: relative;
+  background: #fff;
+  border-radius: 24px;
+  padding: 60px 100px;
+  margin: 80px 0 120px;
+}
+
+@media (max-width: 1127px) {
+  /* line 636, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_page.scss */
+  .section-box {
+    padding: 60px 70px;
+  }
+}
+
+@media (max-width: 999px) {
+  /* line 636, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_page.scss */
+  .section-box {
+    padding: 40px;
+  }
+}
+
+@media (max-width: 640px) {
+  /* line 636, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_page.scss */
+  .section-box {
+    padding: 30px 16px;
+    margin: 60px 0 80px;
+    border-radius: 12px;
+  }
+}
+
+/* line 657, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_page.scss */
+.section-box.title {
+  border-radius: 0 24px 24px 24px;
+}
+
+@media (max-width: 640px) {
+  /* line 657, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_page.scss */
+  .section-box.title {
+    border-radius: 0 12px 12px 12px;
+  }
+}
+
+@media (max-width: 640px) {
+  /* line 666, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_page.scss */
+  .section-box.nomargin {
+    border-radius: 0 0 12px 12px;
+    padding-top: 50px;
+  }
+  /* line 671, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_page.scss */
+  .section-box.nomargin h4 {
+    top: -32px;
+    width: 100%;
+  }
+}
+
+/* line 678, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_page.scss */
+.section-box.divider-bottom {
+  margin-bottom: 0;
+}
+
+/* line 682, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_page.scss */
+.section-box.divider-top {
+  margin-top: 0;
+}
+
+@media (max-width: 999px) {
+  /* line 686, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_page.scss */
+  .section-box.btn {
+    margin-bottom: 40px;
+  }
+}
+
+/* line 692, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_page.scss */
+.section-box h4 {
+  position: absolute;
+  top: -36px;
+  left: 0;
+  background: #000;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  border-radius: 8px 8px 0 0;
+  padding: 4px 20px;
+}
+
+@media (max-width: 640px) {
+  /* line 692, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_page.scss */
+  .section-box h4 {
+    top: -33px;
+    font-size: 13px;
+    padding: 4px 8px;
+  }
+}
+
+/* line 711, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_page.scss */
+.section-box:last-child {
+  margin-bottom: 60px;
+}
+
+/* line 715, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_page.scss */
+.section-box .flex-wrap {
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 640px) {
+  /* line 715, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_page.scss */
+  .section-box .flex-wrap {
+    flex-direction: column;
+  }
+}
+
+/* line 723, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_page.scss */
+.section-box .flex-wrap .text {
+  margin-right: 20px;
+}
+
+@media (max-width: 640px) {
+  /* line 723, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_page.scss */
+  .section-box .flex-wrap .text {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+}
+
+/* line 731, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_page.scss */
+.section-box .flex-wrap .text h5 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* line 737, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_page.scss */
+.section-box .flex-wrap .text .warning {
+  font-size: 12px;
+  text-indent: -1.2em;
+  margin-left: 1.2em;
+}
+
+/* line 742, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_page.scss */
+.section-box .flex-wrap .text .warning::before {
+  content: "※";
+}
+
+/* line 748, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_page.scss */
+.section-box .flex-wrap .text .keisan-img {
+  width: 120px;
+}
+
+@media (max-width: 640px) {
+  /* line 753, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_page.scss */
+  .section-box .flex-wrap .certificate {
+    width: 40%;
+  }
+}
+
+/* line 762, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_page.scss */
+.section-box .flowchart .item {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+/* line 767, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_page.scss */
+.section-box .flowchart .item .num {
+  width: 60px;
+  margin-right: 30px;
+}
+
+@media (max-width: 640px) {
+  /* line 767, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_page.scss */
+  .section-box .flowchart .item .num {
+    width: 40px;
+    margin-right: 10px;
+  }
+}
+
+/* line 778, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_page.scss */
+.section-box .flowchart .item .text {
+  width: 624px;
+  margin-top: 14px;
+}
+
+@media (max-width: 1127px) {
+  /* line 778, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_page.scss */
+  .section-box .flowchart .item .text {
+    width: 88%;
+  }
+}
+
+@media (max-width: 640px) {
+  /* line 778, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_page.scss */
+  .section-box .flowchart .item .text {
+    margin-top: 6px;
+  }
+}
+
+/* line 790, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_page.scss */
+.section-box .flowchart .item .text h5 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 999px) {
+  /* line 790, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_page.scss */
+  .section-box .flowchart .item .text h5 {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 640px) {
+  /* line 790, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_page.scss */
+  .section-box .flowchart .item .text h5 {
+    font-size: 16px;
+  }
+}
+
+/* line 809, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_page.scss */
+.section-box .flowchart .item:nth-child(1) .num::after {
+  height: 64px;
+}
+
+@media (max-width: 999px) {
+  /* line 809, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_page.scss */
+  .section-box .flowchart .item:nth-child(1) .num::after {
+    height: 82px;
+  }
+}
+
+@media (max-width: 640px) {
+  /* line 809, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_page.scss */
+  .section-box .flowchart .item:nth-child(1) .num::after {
+    height: 52px;
+  }
+}
+
+@media (max-width: 375px) {
+  /* line 809, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_page.scss */
+  .section-box .flowchart .item:nth-child(1) .num::after {
+    height: 78px;
+  }
+}
+
+/* line 829, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_page.scss */
+.section-box .flowchart .item:nth-child(2) .num::after {
+  height: 120px;
+}
+
+@media (max-width: 999px) {
+  /* line 829, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_page.scss */
+  .section-box .flowchart .item:nth-child(2) .num::after {
+    height: 140px;
+  }
+}
+
+@media (max-width: 767px) {
+  /* line 829, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_page.scss */
+  .section-box .flowchart .item:nth-child(2) .num::after {
+    height: 132px;
+  }
+}
+
+@media (max-width: 640px) {
+  /* line 829, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_page.scss */
+  .section-box .flowchart .item:nth-child(2) .num::after {
+    height: 102px;
+  }
+}
+
+@media (max-width: 375px) {
+  /* line 829, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_page.scss */
+  .section-box .flowchart .item:nth-child(2) .num::after {
+    height: 156px;
+  }
+}
+
+/* line 853, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_page.scss */
+.section-box .flowchart .item:nth-child(3) .num::after {
+  height: 92px;
+}
+
+@media (max-width: 999px) {
+  /* line 853, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_page.scss */
+  .section-box .flowchart .item:nth-child(3) .num::after {
+    height: 110px;
+  }
+}
+
+@media (max-width: 767px) {
+  /* line 853, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_page.scss */
+  .section-box .flowchart .item:nth-child(3) .num::after {
+    height: 106px;
+  }
+}
+
+@media (max-width: 640px) {
+  /* line 853, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_page.scss */
+  .section-box .flowchart .item:nth-child(3) .num::after {
+    height: 78px;
+  }
+}
+
+@media (max-width: 375px) {
+  /* line 853, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_page.scss */
+  .section-box .flowchart .item:nth-child(3) .num::after {
+    height: 130px;
+  }
+}
+
+/* line 875, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_page.scss */
+.section-box .flowchart .item:last-child {
+  margin-bottom: 0;
+}
+
+/* line 881, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_page.scss */
+.section-box .price {
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 640px) {
+  /* line 881, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_page.scss */
+  .section-box .price {
+    display: block;
+    text-align: center;
+  }
+}
+
+/* line 890, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_page.scss */
+.section-box .price p {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+@media (max-width: 999px) {
+  /* line 890, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_page.scss */
+  .section-box .price p {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 767px) {
+  /* line 890, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_page.scss */
+  .section-box .price p {
+    font-size: 16px;
+  }
+}
+
+/* line 902, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_page.scss */
+.section-box .price p span {
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  margin-left: 10px;
+}
+
+@media (max-width: 1003px) {
+  /* line 902, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_page.scss */
+  .section-box .price p span {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 999px) {
+  /* line 902, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_page.scss */
+  .section-box .price p span {
+    font-size: 20px;
+    margin-left: 4px;
+  }
+}
+
+@media (max-width: 767px) {
+  /* line 902, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_page.scss */
+  .section-box .price p span {
+    font-size: 24px;
+    margin-left: 10px;
+  }
+}
+
+/* line 921, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_page.scss */
+.section-box .price p span.small {
+  font-size: 12px;
+  font-weight: normal;
+  margin-left: 0;
+}
+
+/* line 928, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_page.scss */
+.section-box .price p:last-child {
+  margin-left: 60px;
+}
+
+@media (max-width: 999px) {
+  /* line 928, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_page.scss */
+  .section-box .price p:last-child {
+    margin-left: 40px;
+  }
+}
+
+@media (max-width: 640px) {
+  /* line 928, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_page.scss */
+  .section-box .price p:last-child {
+    margin-left: 0;
+  }
+}
+
+/* line 944, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_page.scss */
+.section-box table {
+  width: 100%;
+}
+
+/* line 947, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_page.scss */
+.section-box table thead {
+  background: #edf7ff;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+}
+
+/* line 952, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_page.scss */
+.section-box table thead th {
+  border-right: 1px solid #000;
+  padding-left: 20px;
+}
+
+@media (max-width: 320px) {
+  /* line 952, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_page.scss */
+  .section-box table thead th {
+    font-size: 12px;
+  }
+}
+
+/* line 962, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_page.scss */
+.section-box table thead td {
+  text-align: right;
+  padding: 10px 30px 10px 0;
+}
+
+@media (max-width: 640px) {
+  /* line 962, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_page.scss */
+  .section-box table thead td {
+    padding: 10px 0;
+  }
+}
+
+@media (max-width: 320px) {
+  /* line 962, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_page.scss */
+  .section-box table thead td {
+    font-size: 12px;
+  }
+}
+
+/* line 979, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_page.scss */
+.section-box table tbody th,
+.section-box table tbody td {
+  border-bottom: 1px solid #000;
+  padding: 10px 0;
+}
+
+@media (max-width: 320px) {
+  /* line 979, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_page.scss */
+  .section-box table tbody th,
+  .section-box table tbody td {
+    font-size: 11px;
+  }
+}
+
+/* line 988, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_page.scss */
+.section-box table tbody th {
+  text-align: left;
+  border-right: 1px solid #000;
+  padding-left: 20px;
+}
+
+@media (max-width: 640px) {
+  /* line 988, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_page.scss */
+  .section-box table tbody th {
+    padding-left: 10px;
+  }
+}
+
+/* line 999, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_page.scss */
+.section-box table tbody td {
+  text-align: right;
+  padding-right: 30px;
+}
+
+@media (max-width: 640px) {
+  /* line 999, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_page.scss */
+  .section-box table tbody td {
+    padding-right: 0;
+  }
+}
+
+/* line 1010, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_page.scss */
+.section-box table tbody .total th,
+.section-box table tbody .total td {
+  border-top: 3px solid #000;
+  border-bottom: 3px solid #000;
+}
+
+/* line 1022, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_page.scss */
+.divider {
+  position: relative;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 94%;
+  text-align: center;
+  padding: 10px 0;
+  margin: 0 auto;
+}
+
+@media (max-width: 640px) {
+  /* line 1022, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_page.scss */
+  .divider {
+    width: 88%;
+  }
+}
+
+/* line 1037, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_page.scss */
+.divider::before,
+.divider::after {
+  position: absolute;
+  content: " ";
+  width: 22px;
+  height: 22px;
+  background: #edf7ff;
+  border-radius: 100%;
+}
+
+/* line 1046, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_page.scss */
+.divider::before {
+  content: " ";
+  left: -8px;
+}
+
+@media (max-width: 640px) {
+  /* line 1046, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_page.scss */
+  .divider::before {
+    left: -10px;
+  }
+}
+
+/* line 1056, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_page.scss */
+.divider::after {
+  content: " ";
+  right: -8px;
+}
+
+@media (max-width: 640px) {
+  /* line 1056, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_page.scss */
+  .divider::after {
+    right: -10px;
+  }
+}
+
+/* line 1066, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_page.scss */
+.divider img {
+  width: 80%;
+}
+
+/* line 1071, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_page.scss */
+.divider.sample p {
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 78px;
+  background: #000;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 8px;
+  padding: 4px 0;
+  margin: auto;
+  z-index: 96;
+}
+
+/******************************************************************
+ * 私たちについて
+******************************************************************/
+/* about-message
+-----------------------------------------------------------------*/
+/* line 8, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_about.scss */
+.about-message {
+  padding: 0px 0 80px;
+  text-align: center;
+}
+
+@media (max-width: 640px) {
+  /* line 8, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_about.scss */
+  .about-message {
+    padding-bottom: 0;
+  }
+}
+
+/* line 16, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_about.scss */
+.about-message .message-wrap {
+  position: relative;
+}
+
+/* line 19, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_about.scss */
+.about-message .message-wrap::before {
+  position: absolute;
+  content: " ";
+  top: 14px;
+  right: -60px;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  z-index: -1;
+  border-radius: 20px 0 0 20px;
+}
+
+@media (max-width: 640px) {
+  /* line 19, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_about.scss */
+  .about-message .message-wrap::before {
+    top: 22px;
+  }
+}
+
+@media (max-width: 375px) {
+  /* line 19, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_about.scss */
+  .about-message .message-wrap::before {
+    right: -20px;
+  }
+}
+
+/* line 40, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_about.scss */
+.about-message .message-wrap h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 8px;
+}
+
+@media (max-width: 640px) {
+  /* line 40, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_about.scss */
+  .about-message .message-wrap h2 {
+    width: 50%;
+    padding: 10px 0;
+  }
+}
+
+/* line 52, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_about.scss */
+.about-message .message-wrap .textbox {
+  width: 70%;
+  padding: 80px 40px 60px;
+  margin: 0 auto;
+}
+
+@media (max-width: 1169px) {
+  /* line 52, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_about.scss */
+  .about-message .message-wrap .textbox {
+    width: 80%;
+    padding: 70px 30px 60px 30px;
+  }
+}
+
+@media (max-width: 640px) {
+  /* line 52, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_about.scss */
+  .about-message .message-wrap .textbox {
+    width: 90%;
+    padding: 40px 20px;
+  }
+}
+
+/* line 67, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_about.scss */
+.about-message .message-wrap .textbox p {
+  font-size: 16px;
+  text-align: left;
+  line-height: 2.8;
+  margin-bottom: 40px;
+}
+
+@media (max-width: 1169px) {
+  /* line 67, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_about.scss */
+  .about-message .message-wrap .textbox p {
+    font-size: 14px;
+  }
+}
+
+/* line 77, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_about.scss */
+.about-message .message-wrap .textbox p:last-child {
+  margin-bottom: 0;
+}
+
+/* line 84, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_about.scss */
+.about-message .message-wrap .img {
+  text-align: center;
+  padding-bottom: 80px;
+}
+
+@media (max-width: 640px) {
+  /* line 84, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_about.scss */
+  .about-message .message-wrap .img {
+    padding-bottom: 40px;
+  }
+}
+
+/* line 92, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_about.scss */
+.about-message .message-wrap .img img {
+  width: 300px;
+}
+
+@media (max-width: 640px) {
+  /* line 92, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_about.scss */
+  .about-message .message-wrap .img img {
+    width: 200px;
+  }
+}
+
+/* about-prof
+-----------------------------------------------------------------*/
+/* line 109, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_about.scss */
+.about-prof {
+  padding: 60px 0;
+}
+
+/* line 112, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_about.scss */
+.about-prof .item {
+  margin-bottom: 80px;
+}
+
+/* line 115, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_about.scss */
+.about-prof .item .item-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (max-width: 767px) {
+  /* line 115, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_about.scss */
+  .about-prof .item .item-wrap {
+    display: block;
+  }
+}
+
+/* line 124, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_about.scss */
+.about-prof .item .item-wrap .item-table {
+  width: 56%;
+}
+
+@media (max-width: 767px) {
+  /* line 124, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_about.scss */
+  .about-prof .item .item-wrap .item-table {
+    width: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  /* line 131, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_about.scss */
+  .about-prof .item .item-wrap .item-table table {
+    margin-bottom: 20px;
+  }
+}
+
+/* line 137, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_about.scss */
+.about-prof .item .item-wrap .item-table table th {
+  width: 40%;
+}
+
+@media (max-width: 499px) {
+  /* line 137, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_about.scss */
+  .about-prof .item .item-wrap .item-table table th {
+    width: 24%;
+  }
+}
+
+@media (max-width: 499px) {
+  /* line 144, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_about.scss */
+  .about-prof .item .item-wrap .item-table table th::after {
+    width: 14px;
+    right: 10px;
+  }
+}
+
+/* line 154, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_about.scss */
+.about-prof .item .item-wrap .img {
+  width: 40%;
+}
+
+@media (max-width: 767px) {
+  /* line 154, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_about.scss */
+  .about-prof .item .item-wrap .img {
+    width: 60%;
+    margin: 0 auto;
+  }
+}
+
+/* line 165, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_about.scss */
+.about-prof .item table {
+  border-collapse: separate;
+  border-spacing: 0 20px;
+}
+
+/* line 169, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_about.scss */
+.about-prof .item table th,
+.about-prof .item table td {
+  vertical-align: baseline;
+}
+
+@media (max-width: 640px) {
+  /* line 169, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_about.scss */
+  .about-prof .item table th,
+  .about-prof .item table td {
+    font-size: 12px;
+  }
+}
+
+/* line 178, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_about.scss */
+.about-prof .item table th {
+  position: relative;
+  width: 27%;
+}
+
+@media (max-width: 999px) {
+  /* line 178, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_about.scss */
+  .about-prof .item table th {
+    width: 22%;
+  }
+}
+
+/* line 186, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_about.scss */
+.about-prof .item table th::after {
+  position: absolute;
+  top: 18px;
+  right: 40px;
+  content: " ";
+  width: 64px;
+  height: 1px;
+  background: #c8c8c8;
+}
+
+@media (max-width: 999px) {
+  /* line 186, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_about.scss */
+  .about-prof .item table th::after {
+    right: 20px;
+  }
+}
+
+@media (max-width: 899px) {
+  /* line 186, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_about.scss */
+  .about-prof .item table th::after {
+    width: 40px;
+  }
+}
+
+@media (max-width: 499px) {
+  /* line 186, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_about.scss */
+  .about-prof .item table th::after {
+    width: 14px;
+    right: 4px;
+    top: 16px;
+  }
+}
+
+/* line 212, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_about.scss */
+.about-prof .item table td {
+  line-height: 2.6;
+}
+
+/* line 218, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_about.scss */
+.about-prof .item:last-child {
+  margin-bottom: 0;
+}
+
+/* line 221, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_about.scss */
+.about-prof .item:last-child .item-wrap {
+  background: url("img/about/about_prof_img02.png") top right no-repeat;
+  background-size: 236px;
+}
+
+@media (max-width: 1049px) {
+  /* line 221, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_about.scss */
+  .about-prof .item:last-child .item-wrap {
+    background: url("img/about/about_prof_img02.png") top 80px right no-repeat;
+    background-size: 190px;
+  }
+}
+
+@media (max-width: 640px) {
+  /* line 221, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_about.scss */
+  .about-prof .item:last-child .item-wrap {
+    background: none;
+  }
+}
+
+/* line 234, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_about.scss */
+.about-prof .item:last-child .item-wrap .sp {
+  width: 300px;
+  margin: 0 auto;
+}
+
+/* line 238, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_about.scss */
+.about-prof .item:last-child .item-wrap .sp img {
+  width: 100%;
+}
+
+/******************************************************************
+ * 事業内容
+******************************************************************/
+/* 創業支援業務
+-----------------------------------------------------------------*/
+/* 会計顧問業務
+-----------------------------------------------------------------*/
+/******************************************************************
+ * 料金表
+******************************************************************/
+/* price-point
+-----------------------------------------------------------------*
+.price-point {
+  padding: 40px 0 120px;
+}
+
+@media (max-width: 640px) {
+  .price-point {
+    padding: 20px 0 40px;
+  }
+}
+
+.price-point .point-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 640px) {
+
+  .price-point .point-wrap {
+    display: block;
+    padding: 0 20px;
+  }
+}
+
+.price-point .point-wrap .item {
+  width: 270px;
+}
+
+@media (max-width: 1127px) {
+
+  .price-point .point-wrap .item {
+    width: 230px;
+  }
+}
+
+@media (max-width: 969px) {
+
+  .price-point .point-wrap .item {
+    width: 180px;
+  }
+}
+
+@media (max-width: 640px) {
+
+  .price-point .point-wrap .item {
+    width: 100%;
+    margin-bottom: 80px;
+  }
+}
+
+.price-point .point-wrap .item .top {
+  position: relative;
+  width: 160px;
+  margin: 0 auto 20px;
+}
+
+@media (max-width: 640px) {
+
+  .price-point .point-wrap .item .top {
+    width: 180px;
+  }
+}
+
+.price-point .point-wrap .item .top h2 {
+  position: absolute;
+  top: -46px;
+  left: 0;
+  right: 0;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  text-align: center;
+  line-height: 1;
+  margin: auto;
+}
+
+.price-point .point-wrap .item .top h2 span {
+  font-size: 58px;
+  letter-spacing: 1px;
+}
+
+.price-point .point-wrap .item .top p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 160px;
+  height: 160px;
+  background: #fff;
+  border-radius: 160px;
+  margin: 0 auto;
+}
+
+.price-point .point-wrap .item .top p img {
+  height: 85px;
+}
+
+.price-point .point-wrap .item .top p img.img02 {
+  height: 70px;
+  padding-left: 16px;
+}
+
+.price-point .point-wrap .item .text {
+  text-align: center;
+}
+
+.price-point .point-wrap .item .text h3 {
+  display: inline-block;
+  font-size: 20px;
+  font-weight: bold;
+  border-bottom: 4px solid #000;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 1127px) {
+
+  .price-point .point-wrap .item .text h3 {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 969px) {
+
+  .price-point .point-wrap .item .text h3 {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 640px) {
+
+  .price-point .point-wrap .item .text h3 {
+    margin-bottom: 20px;
+  }
+}
+
+
+.price-point .point-wrap .item .text .section-text {
+  text-align: left;
+}
+
+@media (max-width: 969px) {
+  
+  .price-point .point-wrap .item .text .section-text {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 640px) {
+  
+  .price-point .point-wrap .item .text .section-text {
+    font-size: 14px;
+  }
+}
+
+/* founding
+-----------------------------------------------------------------*/
+
+.founding-01 .section-box {
+  margin-top: 0;
+}
+
+
+.founding-02 .section-box {
+  margin-top: 40px;
+}
+
+/* adviser
+-----------------------------------------------------------------*/
+
+.adviser-01 {
+  margin-bottom: 80px;
+}
+
+
+.adviser-01 .section-text {
+  margin-bottom: 20px;
+}
+
+
+.adviser-02 h3 {
+  position: relative;
+  padding-left: 50px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 640px) {
+  
+  .adviser-02 h3 {
+    padding-left: 40px;
+  }
+}
+
+
+.adviser-02 .box-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 767px) {
+  
+  .adviser-02 .box-wrap {
+    display: block;
+  }
+}
+
+
+.adviser-02 .box-wrap .section-box {
+  width: 48.5%;
+  padding: 50px;
+  margin-bottom: 0;
+}
+
+@media (max-width: 1014px) {
+  
+  .adviser-02 .box-wrap .section-box {
+    padding: 30px;
+  }
+}
+
+@media (max-width: 767px) {
+  
+  .adviser-02 .box-wrap .section-box {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+}
+
+
+.adviser-02 .box-wrap .section-box table {
+  margin-bottom: 0;
+}
+
+@media (max-width: 999px) {
+  
+  .adviser-02 .box-wrap .section-box table th,
+  .adviser-02 .box-wrap .section-box table td {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 767px) {
+  
+  .adviser-02 .box-wrap .section-box table th,
+  .adviser-02 .box-wrap .section-box table td {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 320px) {
+  
+  .adviser-02 .box-wrap .section-box table th,
+  .adviser-02 .box-wrap .section-box table td {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 640px) {
+  
+  .adviser-02 .box-wrap .section-box table thead th,
+  .adviser-02 .box-wrap .section-box table thead td {
+    text-align: center;
+  }
+}
+
+@media (max-width: 999px) {
+  
+  .adviser-02 .box-wrap .section-box table thead th {
+    padding-left: 20px;
+  }
+}
+
+
+.adviser-02 .box-wrap .section-box table tbody .double-th {
+  padding: 34px 0 34px 20px;
+}
+
+@media (max-width: 999px) {
+  
+  .adviser-02 .box-wrap .section-box table tbody .double-th {
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  
+  .adviser-02 .box-wrap .section-box table tbody .double-th {
+    padding: 10px 0 10px 20px;
+  }
+}
+
+@media (max-width: 640px) {
+  
+  .adviser-02 .box-wrap .section-box table tbody .double-th {
+    padding-left: 0;
+  }
+}
+
+
+.adviser-02 .box-wrap .section-box table tbody .double-td {
+  padding: 34px 30px 34px 0;
+}
+
+@media (max-width: 640px) {
+  
+  .adviser-02 .box-wrap .section-box table tbody .double-td {
+    padding-right: 0;
+  }
+}
+
+@media (max-width: 320px) {
+  
+  .adviser-02 .box-wrap .section-box table tbody th,
+  .adviser-02 .box-wrap .section-box table tbody td {
+    font-size: 11px;
+  }
+}
+
+
+.adviser-03 {
+  margin-bottom: 60px;
+}
+
+
+.adviser-03 h3 {
+  position: relative;
+  padding-left: 50px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 640px) {
+  
+  .adviser-03 h3 {
+    padding-left: 40px;
+  }
+}
+
+
+.adviser-03 .section-box {
+  margin-top: 50px;
+}
+
+
+.adviser-03 .section-box table {
+  margin-bottom: 20px;
+}
+
+
+.adviser-03 .section-box table thead th {
+  width: 46%;
+}
+
+
+.adviser-03 .section-box table tbody th {
+  padding: 24px;
+}
+
+@media (max-width: 640px) {
+  
+  .adviser-03 .section-box table tbody th {
+    padding: 10px;
+  }
+}
+
+
+.adviser-03 .section-box .warning {
+  font-size: 12px;
+  text-indent: -1.2em;
+  margin-left: 1.2em;
+}
+
+
+.adviser-03 .section-box .warning::before {
+  content: "※";
+}
+
+/* case
+-----------------------------------------------------------------*/
+@media (max-width: 320px) {
+  
+  #tab3 .heading-title {
+    font-size: 16px;
+    padding-left: 30px;
+  }
+  
+  #tab3 .heading-title::before {
+    height: 36px;
+  }
+}
+
+@media (max-width: 1127px) {
+  
+  #tab3 section .section-box {
+    padding: 60px;
+  }
+}
+
+@media (max-width: 899px) {
+  
+  #tab3 section .section-box {
+    padding: 40px 20px;
+  }
+}
+
+@media (max-width: 320x) {
+  
+  #tab3 section .section-box {
+    padding: 40px 10px;
+  }
+}
+
+
+#tab3 section .section-box h3 {
+  position: absolute;
+  top: -46px;
+  left: 0;
+  right: 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 1;
+  margin: auto;
+}
+
+@media (max-width: 899px) {
+  
+  #tab3 section .section-box h3 {
+    top: -36px;
+    font-size: 14px;
+  }
+}
+
+
+#tab3 section .section-box h3 span {
+  font-size: 66px;
+  letter-spacing: 0px;
+}
+
+@media (max-width: 899px) {
+  
+  #tab3 section .section-box h3 span {
+    font-size: 50px;
+  }
+}
+
+
+#tab3 section .section-box .inner-box {
+  position: relative;
+  background: #fff;
+  border: 3px solid #000;
+  border-radius: 8px;
+  padding: 30px 40px;
+}
+
+@media (max-width: 999px) {
+  
+  #tab3 section .section-box .inner-box {
+    padding: 20px 30px;
+  }
+}
+
+@media (max-width: 320px) {
+  
+  #tab3 section .section-box .inner-box {
+    padding: 20px 16px;
+  }
+}
+
+
+#tab3 section .section-box .inner-box.title {
+  border-radius: 0 8px 8px 8px;
+  margin: 30px 0 70px;
+}
+
+@media (max-width: 999px) {
+  
+  #tab3 section .section-box .inner-box.title {
+    margin-bottom: 46px;
+  }
+}
+
+@media (max-width: 640px) {
+  
+  #tab3 section .section-box .inner-box.title {
+    border-radius: 8px;
+  }
+}
+
+
+#tab3 section .section-box .inner-box.title::after {
+  position: absolute;
+  bottom: -61px;
+  left: 0;
+  right: 0;
+  content: " ";
+  background: url("img/price/arrow_down.png") no-repeat;
+  background-size: contain;
+  width: 60px;
+  height: 58px;
+  margin: 0 auto;
+}
+
+@media (max-width: 999px) {
+  
+  #tab3 section .section-box .inner-box.title::after {
+    bottom: -43px;
+    width: 40px;
+    height: 40px;
+  }
+}
+
+
+#tab3 section .section-box .inner-box.yellow {
+  background: var(--primary-color);
+}
+
+
+#tab3 section .section-box .inner-box h4 {
+  left: -3px;
+}
+
+@media (max-width: 999px) {
+  
+  #tab3 section .section-box .inner-box h4 {
+    top: -32px;
+    font-size: 14px;
+    padding: 2px 12px;
+  }
+}
+
+@media (max-width: 640px) {
+  
+  #tab3 section .section-box .inner-box h4 {
+    top: -36px;
+    left: 0;
+    right: 0;
+    width: 66%;
+    font-size: 18px;
+    text-align: center;
+    margin: auto;
+  }
+}
+
+@media (max-width: 409px) {
+  
+  #tab3 section .section-box .inner-box h4 {
+    top: -31px;
+    font-size: 14px;
+    text-align: center;
+    margin: auto;
+  }
+}
+
+
+#tab3 section .section-box .inner-box .inner-flex {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-weight: bold;
+}
+
+@media (max-width: 640px) {
+  
+  #tab3 section .section-box .inner-box .inner-flex {
+    display: block;
+  }
+}
+
+
+#tab3 section .section-box .inner-box .inner-flex .img {
+  width: 112px;
+  margin-right: 40px;
+}
+
+@media (max-width: 999px) {
+  
+  #tab3 section .section-box .inner-box .inner-flex .img {
+    width: 100px;
+    margin-right: 24px;
+  }
+}
+
+@media (max-width: 899px) {
+  
+  #tab3 section .section-box .inner-box .inner-flex .img {
+    width: 80px;
+    margin-right: 16px;
+  }
+}
+
+@media (max-width: 640px) {
+  
+  #tab3 section .section-box .inner-box .inner-flex .img {
+    width: 180px;
+    margin: 0 auto 20px;
+  }
+}
+
+@media (max-width: 375px) {
+  
+  #tab3 section .section-box .inner-box .inner-flex .img {
+    width: 160px;
+  }
+}
+
+
+#tab3 section .section-box .inner-box .inner-flex .text-q {
+  font-size: 28px;
+}
+
+@media (max-width: 1059px) {
+  
+  #tab3 section .section-box .inner-box .inner-flex .text-q {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 999px) {
+  
+  #tab3 section .section-box .inner-box .inner-flex .text-q {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 640px) {
+  
+  #tab3 section .section-box .inner-box .inner-flex .text-q {
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 375px) {
+  
+  #tab3 section .section-box .inner-box .inner-flex .text-q {
+    font-size: 20px;
+  }
+}
+
+
+#tab3 section .section-box .inner-box .inner-flex .text-a {
+  font-size: 20px;
+}
+
+@media (max-width: 999px) {
+  
+  #tab3 section .section-box .inner-box .inner-flex .text-a {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 640px) {
+  
+  #tab3 section .section-box .inner-box .inner-flex .text-a {
+    font-size: 20px;
+  }
+}
+
+
+#tab3 section .section-box .inner-box .inner-flex .text-a .pdf {
+  background: url(img/price/pdf_icon.png) top right no-repeat;
+  background-size: 10px;
+  font-size: 14px;
+  border-bottom: 1px solid #000;
+  padding: 0 12px 2px 0;
+}
+
+
+#tab3 section .section-box .inner-box .inner-flex .text-a .pdf span {
+  font-size: 10px;
+  font-weight: normal;
+}
+
+
+#tab3 section .section-box .table-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 640px) {
+  
+  #tab3 section .section-box .table-wrap {
+    display: block;
+  }
+}
+
+
+#tab3 section .section-box .table-wrap .table-item {
+  width: 44%;
+}
+
+@media (max-width: 999px) {
+  
+  #tab3 section .section-box .table-wrap .table-item {
+    width: 46%;
+  }
+}
+
+@media (max-width: 640px) {
+  
+  #tab3 section .section-box .table-wrap .table-item {
+    width: 100%;
+  }
+}
+
+
+#tab3 section .section-box .table-wrap .table-item:first-child {
+  position: relative;
+}
+
+@media (max-width: 640px) {
+  
+  #tab3 section .section-box .table-wrap .table-item:first-child {
+    margin-bottom: 70px;
+  }
+}
+
+
+#tab3 section .section-box .table-wrap .table-item:first-child::after {
+  position: absolute;
+  top: 50%;
+  right: -74px;
+  content: " ";
+  background: url("img/price/arrow_right.png") no-repeat;
+  background-size: contain;
+  width: 50px;
+  height: 58px;
+  margin: 0 auto;
+}
+
+@media (max-width: 999px) {
+  
+  #tab3 section .section-box .table-wrap .table-item:first-child::after {
+    right: -46px;
+    width: 34px;
+    height: 42px;
+  }
+}
+
+@media (max-width: 799px) {
+  
+  #tab3 section .section-box .table-wrap .table-item:first-child::after {
+    right: -38px;
+  }
+}
+
+@media (max-width: 767px) {
+  
+  #tab3 section .section-box .table-wrap .table-item:first-child::after {
+    right: -46px;
+  }
+}
+
+@media (max-width: 640px) {
+  
+  #tab3 section .section-box .table-wrap .table-item:first-child::after {
+    top: unset;
+    bottom: -60px;
+    right: 0;
+    left: 0;
+    background: url("img/price/arrow_down.png") no-repeat;
+    background-size: contain;
+    width: 40px;
+    height: 40px;
+  }
+}
+
+
+#tab3 section .section-box .table-wrap .table-item h5 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+
+#tab3 section .section-box .table-wrap .table-item .section-text {
+  border-top: 3px solid #000;
+  border-bottom: 3px solid #000;
+  letter-spacing: 1px;
+  padding: 10px 0;
+}
+
+@media (max-width: 1027px) {
+  
+  #tab3 section .section-box .table-wrap .table-item .section-text {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 899px) {
+  
+  #tab3 section .section-box .table-wrap .table-item .section-text {
+    letter-spacing: 0px;
+  }
+}
+
+@media (max-width: 640px) {
+  
+  #tab3 section .section-box .table-wrap .table-item .section-text {
+    font-size: 14px;
+    letter-spacing: 1px;
+  }
+}
+
+@media (max-width: 1027px) {
+  
+  #tab3 section .section-box .table-wrap .table-item table {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 640px) {
+  
+  #tab3 section .section-box .table-wrap .table-item table {
+    font-size: 14px;
+  }
+}
+
+
+#tab3 section .section-box .table-wrap .table-item table tr:first-child th,
+#tab3 section .section-box .table-wrap .table-item table tr:first-child td {
+  border-top: 1px solid #000;
+}
+
+
+#tab3 section .section-box .table-wrap .table-item table th {
+  width: 44%;
+  border-right: none;
+  background: #edf7ff;
+  padding: 20px 0 20px 20px;
+}
+
+@media (max-width: 899px) {
+  
+  #tab3 section .section-box .table-wrap .table-item table th {
+    width: 50%;
+    padding-left: 10px;
+  }
+}
+
+
+#tab3 section .section-box .table-wrap .table-item table th span {
+  font-family: "Montserrat", sans-serif;
+  background: #000;
+  font-size: 12px;
+  font-weight: bold;
+  color: #fff;
+  border-radius: 6px;
+  padding: 4px 6px;
+  margin-right: 6px;
+}
+
+@media (max-width: 999px) {
+  
+  #tab3 section .section-box .table-wrap .table-item table th span {
+    padding: 2px 4px;
+    margin-right: 4px;
+  }
+}
+
+
+#tab3 section .section-box .table-wrap .table-item table td {
+  text-align: left;
+  padding-left: 20px;
+}
+
+@media (max-width: 899px) {
+  
+  #tab3 section .section-box .table-wrap .table-item table td {
+    padding-left: 10px;
+  }
+}
+
+
+#tab3 section .section-box .table-wrap .table-item table .total th {
+  border-top: 3px solid #000;
+  padding: 69px 0 69px 20px;
+}
+
+@media (max-width: 999px) {
+  
+  #tab3 section .section-box .table-wrap .table-item table .total th {
+    padding: 65px 0 65px 20px;
+  }
+}
+
+
+#tab3 section .section-box .table-wrap .table-item table .total .top-none {
+  border-top: none;
+}
+
+
+#tab3 section .section-box .table-wrap .table-item table .total .bottom-none {
+  border-bottom: 1px solid #000;
+}
+
+
+#tab3 section .section-box .table-wrap .table-item table.space-bottom {
+  margin-bottom: 20px;
+}
+
+
+#tab3 section .section-box .table-wrap .table-item:last-child table th {
+  padding-left: 10px;
+}
+
+@media (max-width: 999px) {
+  
+  #tab3 section .section-box .table-wrap .table-item:last-child table th {
+    padding-left: 4px;
+  }
+}
+
+
+#tab3 section .section-box .table-wrap .table-item:last-child table .total th {
+  padding-left: 20px;
+}
+
+
+#tab3 section .section-box.divider-bottom {
+  padding-top: 60px;
+}
+
+
+#tab3 section .section-box.divider-top {
+  padding-top: 40px;
+}
+
+@media (max-width: 640px) {
+  
+  #tab3 .case-03 .section-box .inner-box h4 {
+    width: 344px;
+  }
+}
+
+@media (max-width: 409px) {
+  
+  #tab3 .case-03 .section-box .inner-box h4 {
+    top: -29px;
+    font-size: 13px;
+    width: 260px;
+  }
+}
+
+/******************************************************************
+ * お知らせ
+******************************************************************/
+/* news-list
+-----------------------------------------------------------------*/
+/* line 8, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_news.scss */
+.news-list {
+  padding-top: 40px;
+}
+
+/* line 11, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_news.scss */
+.news-list .news-item-wrap {
+  padding-top: 20px;
+  margin-top: -20px;
+}
+
+@media (max-width: 767px) {
+  /* line 11, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_news.scss */
+  .news-list .news-item-wrap {
+    padding-top: 60px;
+    margin-top: -60px;
+  }
+}
+
+/* line 20, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_news.scss */
+.news-list .news-item-wrap .news-item {
+  background: #fff;
+  border-radius: 24px;
+  padding: 40px 80px;
+  margin-bottom: 80px;
+}
+
+@media (max-width: 999px) {
+  /* line 20, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_news.scss */
+  .news-list .news-item-wrap .news-item {
+    padding: 30px 60px;
+  }
+}
+
+@media (max-width: 640px) {
+  /* line 20, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_news.scss */
+  .news-list .news-item-wrap .news-item {
+    border-radius: 16px;
+    padding: 20px;
+    margin-bottom: 40px;
+  }
+}
+
+/* line 36, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_news.scss */
+.news-list .news-item-wrap .news-item .item-top {
+  margin-bottom: 30px;
+}
+
+@media (max-width: 640px) {
+  /* line 36, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_news.scss */
+  .news-list .news-item-wrap .news-item .item-top {
+    margin-bottom: 14px;
+  }
+}
+
+/* line 43, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_news.scss */
+.news-list .news-item-wrap .news-item .item-top .dc {
+  margin-bottom: 10px;
+}
+
+/* line 46, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_news.scss */
+.news-list .news-item-wrap .news-item .item-top .dc .date {
+  width: 100px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  color: var(--primary-color);
+  margin-bottom: 10px;
+}
+
+@media (max-width: 640px) {
+  /* line 46, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_news.scss */
+  .news-list .news-item-wrap .news-item .item-top .dc .date {
+    font-size: 14px;
+  }
+}
+
+/* line 59, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_news.scss */
+.news-list .news-item-wrap .news-item .item-top .dc .cat {
+  display: inline-block;
+  width: 104px;
+  background: #000;
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+  margin-left: 10px;
+}
+
+@media (max-width: 999px) {
+  /* line 59, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_news.scss */
+  .news-list .news-item-wrap .news-item .item-top .dc .cat {
+    margin-right: 14px;
+  }
+}
+
+@media (max-width: 640px) {
+  /* line 59, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_news.scss */
+  .news-list .news-item-wrap .news-item .item-top .dc .cat {
+    width: 100px;
+    font-size: 12px;
+    padding: 0;
+  }
+}
+
+/* line 84, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_news.scss */
+.news-list .news-item-wrap .news-item .item-top .title {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+@media (max-width: 640px) {
+  /* line 84, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_news.scss */
+  .news-list .news-item-wrap .news-item .item-top .title {
+    font-size: 16px;
+  }
+}
+
+/* line 96, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_news.scss */
+.news-list .news-item-wrap .news-item .item-cont p,
+.news-list .news-item-wrap .news-item .item-cont ul,
+.news-list .news-item-wrap .news-item .item-cont ol {
+  margin-bottom: 20px;
+}
+
+@media (max-width: 640px) {
+  /* line 96, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_news.scss */
+  .news-list .news-item-wrap .news-item .item-cont p,
+  .news-list .news-item-wrap .news-item .item-cont ul,
+  .news-list .news-item-wrap .news-item .item-cont ol {
+    font-size: 12px;
+  }
+}
+
+/* line 106, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_news.scss */
+.news-list .news-item-wrap .news-item .item-cont ul li {
+  text-indent: -2em;
+  margin-left: 2em;
+}
+
+/* line 110, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_news.scss */
+.news-list .news-item-wrap .news-item .item-cont ul li::before {
+  content: "・";
+}
+
+/* line 118, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_news.scss */
+.news-list .news-item-wrap .news-item:last-child {
+  margin-bottom: 40px;
+}
+
+/******************************************************************
+ * よくあるご質問
+******************************************************************/
+/* faq-list
+-----------------------------------------------------------------*/
+/* line 8, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_faq.scss */
+.faq-list {
+  padding-top: 40px;
+}
+
+@media (max-width: 640px) {
+  /* line 8, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_faq.scss */
+  .faq-list {
+    padding-top: 0;
+  }
+}
+
+/* line 15, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_faq.scss */
+.faq-list .item {
+  margin-bottom: 80px;
+}
+
+@media (max-width: 640px) {
+  /* line 15, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_faq.scss */
+  .faq-list .item {
+    margin-bottom: 40px;
+  }
+}
+
+/* line 22, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_faq.scss */
+.faq-list .item .ques {
+  position: relative;
+  background: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 8px;
+  padding: 16px 0 16px 80px;
+  margin-bottom: 24px;
+}
+
+@media (max-width: 640px) {
+  /* line 22, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_faq.scss */
+  .faq-list .item .ques {
+    font-size: 14px;
+    padding-left: 40px;
+  }
+}
+
+/* line 36, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_faq.scss */
+.faq-list .item .ques::before {
+  position: absolute;
+  content: "Q";
+  top: 6px;
+  left: 30px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 26px;
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+@media (max-width: 640px) {
+  /* line 36, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_faq.scss */
+  .faq-list .item .ques::before {
+    top: 2px;
+    left: 10px;
+  }
+}
+
+/* line 54, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_faq.scss */
+.faq-list .item .ans {
+  position: relative;
+  padding-left: 80px;
+}
+
+@media (max-width: 640px) {
+  /* line 54, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_faq.scss */
+  .faq-list .item .ans {
+    font-size: 12px;
+    padding-left: 40px;
+  }
+}
+
+/* line 63, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_faq.scss */
+.faq-list .item .ans::before {
+  position: absolute;
+  content: "A";
+  top: -12px;
+  left: 30px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 26px;
+  font-weight: 600;
+}
+
+@media (max-width: 640px) {
+  /* line 63, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_faq.scss */
+  .faq-list .item .ans::before {
+    top: -14px;
+    left: 10px;
+  }
+}
+
+/******************************************************************
+ * お問い合わせ
+******************************************************************/
+/* contact-form
+-----------------------------------------------------------------
+.contact-form {
+  padding: 40px 0 140px;
+}
+
+@media (max-width: 640px) 
+  .contact-form {
+    padding-top: 0;
+  }
+}
+.contact-form .form-intro {
+  margin-bottom: 80px;
+}
+
+@media (max-width: 640px) {
+  .contact-form .form-intro {
+    margin-bottom: 20px;
+  }
+}
+.contact-form .form-intro .section-text {
+  font-size: 18px;
+  text-align: center;
+  line-height: 2.2;
+  margin-bottom: 60px;
+}
+
+@media (max-width: 640px) {
+  .contact-form .form-intro .section-text {
+    font-size: 14px;
+    margin-bottom: 30px;
+  }
+}
+.contact-form .form-intro a .form-tel {
+  width: 896px;
+  background: var(--primary-color);
+  text-align: center;
+  border-radius: 8px;
+  padding: 40px 0;
+  margin: 0 auto;
+}
+
+@media (max-width: 1099px) {
+  .contact-form .form-intro a .form-tel {
+    width: 80%;
+  }
+}
+
+@media (max-width: 640px) {
+  .contact-form .form-intro a .form-tel {
+    width: 100%;
+    padding: 20px 0;
+  }
+}
+.contact-form .form-intro a .form-tel h2 {
+  width: 482px;
+  margin: 0 auto;
+}
+
+@media (max-width: 899px) {
+  .contact-form .form-intro a .form-tel h2 {
+    width: 80%;
+  }
+}
+.contact-form .form-intro a .form-tel p {
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+.contact-form .mw_wp_form_input .contact-form__confirm,
+.contact-form .mw_wp_form_input .btn-wrap.confirm {
+  display: none;
+}
+.contact-form .form-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 60px;
+}
+
+@media (max-width: 640px) {
+  .contact-form .form-table {
+    border-spacing: 0 20px;
+  }
+}
+
+@media (max-width: 640px) {
+  .contact-form .form-table th,
+  .contact-form .form-table td {
+    display: block;
+    width: 100%;
+  }
+}
+.contact-form .form-table th {
+  position: relative;
+  width: 30%;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.5;
+  vertical-align: top;
+}
+
+@media (max-width: 1127px) {
+  .contact-form .form-table th {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 640px) {
+  .contact-form .form-table th {
+    width: 100%;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+}
+
+.contact-form .form-table th span {
+  font-family: "Montserrat", sans-serif;
+  color: var(--primary-color);
+  font-size: 12px;
+}
+
+.contact-form .form-table th.req::before {
+  position: absolute;
+  top: 26px;
+  right: 24px;
+  content: "必須";
+  background: #000;
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 4px;
+  padding: 4px 8px;
+}
+
+@media (max-width: 1127px) {
+
+  .contact-form .form-table th.req::before {
+    top: 22px;
+    right: 10px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 899px) {
+
+  .contact-form .form-table th.req::before {
+    top: 24px;
+    right: 4px;
+    font-size: 10px;
+    padding: 4px;
+  }
+}
+
+@media (max-width: 640px) {
+
+  .contact-form .form-table th.req::before {
+    font-size: 14px;
+    top: 20px;
+    right: 0;
+  }
+}
+
+.contact-form .form-table td input,
+.contact-form .form-table td textarea {
+  width: 100%;
+  height: 70px;
+  background: #fff;
+  font-size: 14px;
+  border: 2px solid #e6e6e6;
+  border-radius: 8px;
+  padding: 0 10px;
+}
+
+@media (max-width: 640px) {
+
+  .contact-form .form-table td input,
+  .contact-form .form-table td textarea {
+    height: 50px;
+  }
+}
+
+.contact-form .form-table td input input:-webkit-autofill.wpcf7c-conf,
+.contact-form .form-table td textarea input:-webkit-autofill.wpcf7c-conf {
+  -webkit-box-shadow: 0 0 0px 1000px #f3f3f3 inset;
+}
+
+.contact-form .form-table td input.wpcf7c-conf,
+.contact-form .form-table td textarea.wpcf7c-conf {
+  background: transparent;
+  border: none;
+}
+
+.contact-form .form-table td .radio-wrap {
+  display: flex;
+  line-height: 40px;
+  padding-top: 20px;
+}
+
+@media (max-width: 640px) {
+
+  .contact-form .form-table td .radio-wrap {
+    padding-top: 0;
+  }
+}
+
+.contact-form .form-table td .radio-wrap label {
+  display: flex;
+  align-items: center;
+}
+
+.contact-form .form-table td .radio-wrap label input[type="radio"] {
+  display: none;
+  /*チェックボックスを非表示にする */
+  width: auto;
+  margin-right: 10px;
+}
+
+.contact-form
+  .form-table
+  td
+  .radio-wrap
+  label
+  input[type="radio"]
+  + .mwform-radio-field-text {
+  padding-left: 46px;
+  position: relative;
+  font-size: 16px;
+  margin-right: 60px;
+}
+
+.contact-form
+  .form-table
+  td
+  .radio-wrap
+  label
+  input[type="radio"]
+  + .mwform-radio-field-text::before {
+  content: " ";
+  /* ラジオボタンの丸 */
+  display: block;
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 34px;
+  height: 34px;
+  background: #fff;
+  border: 2px solid #e6e6e6;
+  border-radius: 50%;
+}
+
+.contact-form
+  .form-table
+  td
+  .radio-wrap
+  label
+  input[type="radio"]
+  + .mwform-radio-field-text::before.wpcf7c-conf {
+  background: transparent;
+  border: none;
+}
+
+.contact-form
+  .form-table
+  td
+  .radio-wrap
+  label
+  input[type="radio"]:checked
+  + .mwform-radio-field-text::after {
+  content: "";
+  /* ラジオボタンのクリックの丸 */
+  display: block;
+  position: absolute;
+  top: 14px;
+  left: 12px;
+  width: 14px;
+  height: 14px;
+  background: #000;
+  border-radius: 50%;
+}
+
+.contact-form .form-table td .radio-wrap label span {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.contact-form .form-table td span.wpcf7-list-item {
+  margin: 0;
+}
+
+.contact-form .form-table td textarea {
+  height: 200px;
+  padding: 10px;
+}
+
+.contact-form .form-table td .flex {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+@media (max-width: 640px) {
+
+  .contact-form .form-table td .flex {
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+.contact-form .form-table td .flex .subcont {
+  width: 70px;
+  font-weight: bold;
+  margin-right: 20px;
+}
+
+@media (max-width: 999px) {
+
+  .contact-form .form-table td .flex .subcont {
+    margin-right: 10px;
+  }
+}
+
+.contact-form .form-table td .flex .zip {
+  width: 276px;
+}
+
+@media (max-width: 1199px) {
+
+  .contact-form .form-table td .flex .zip {
+    width: 220px;
+  }
+}
+
+.contact-form .form-table td .flex .addr {
+  width: 552px;
+}
+
+@media (max-width: 1199px) {
+
+  .contact-form .form-table td .flex .addr {
+    width: 450px;
+  }
+}
+
+@media (max-width: 999px) {
+
+  .contact-form .form-table td .flex .addr {
+    width: 340px;
+  }
+}
+
+@media (max-width: 640px) {
+
+  .contact-form .form-table td .flex .addr {
+    width: 100%;
+  }
+}
+
+.contact-form .form-table td .flex:last-child {
+  margin-bottom: 0;
+}
+
+.contact-form .btn-wrap.input {
+  display: flex;
+  justify-content: center;
+}
+
+.contact-form .submit {
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.contact-form .submit button {
+  display: block;
+  width: 100%;
+  height: 60px;
+  background: transparent;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.contact-form .privacy {
+  text-align: center;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 640px) {
+
+  .contact-form .privacy {
+    text-align: left;
+  }
+}
+
+.contact-form .privacy a {
+  text-decoration: underline;
+}
+
+div.wpcf7-validation-errors,
+div.wpcf7-acceptance-missing {
+  border: none;
+  font-size: 18px;
+  font-weight: bold;
+  color: red;
+  text-align: center;
+}
+
+/******************************************************************
+ * 確認・サンクス
+******************************************************************/
+/* タイトルとボタン
+-----------------------------------------------------------------*/
+.contact-title {
+  display: inline-block;
+  font-size: 32px;
+  font-weight: bold;
+  border-bottom: 4px solid #000;
+  letter-spacing: 4px;
+  margin: 0 auto 40px;
+}
+
+@media (max-width: 640px) {
+
+  .contact-title {
+    font-size: 24px;
+  }
+}
+
+.contact-form .mw_wp_form_confirm .form-intro {
+  display: none;
+}
+
+.contact-form .mw_wp_form_confirm .btn-wrap.input {
+  display: none;
+}
+
+.contact-form .mw_wp_form_confirm td {
+  padding-top: 25px;
+}
+
+@media (max-width: 640px) {
+
+  .contact-form .mw_wp_form_confirm td {
+    padding-top: 0px;
+  }
+}
+
+.contact-form .mw_wp_form_confirm td .radio-wrap {
+  padding-top: 0;
+}
+
+.btn-wrap.confirm {
+  display: flex;
+  justify-content: space-around;
+}
+
+@media (max-width: 640px) {
+
+  .btn-wrap.confirm {
+    display: block;
+  }
+
+  .btn-wrap.confirm p {
+    margin: 0 auto 20px;
+  }
+}
+
+/* contact-confirm
+-----------------------------------------------------------------*/
+.custom-wpcf7c-confirmed .subcont {
+  display: none;
+}
+
+.custom-wpcf7c-confirmed .form-table tbody th.req::before {
+  content: none;
+}
+
+.contact-form__confirm {
+  text-align: center;
+  padding-top: 100px;
+  margin-top: -100px;
+}
+
+.contact-form__confirm h2 {
+  margin: 0 auto 40px;
+}
+
+.contact-form__confirm p {
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 40px;
+  padding-top: 100px;
+  margin-top: -100px;
+}
+
+.wpcf7-form.custom-wpcf7c-confirmed
+  input[type="checkbox"]:disabled:not(:checked)
+  + .wpcf7-list-item-label {
+  display: none;
+}
+
+.wpcf7-form.custom-wpcf7c-confirmed
+  input[type="checkbox"]:disabled:checked
+  + input
+  + .wpcf7-list-item-label {
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.wpcf7-form.custom-wpcf7c-confirmed
+  input[type="checkbox"]:disabled:checked
+  + input
+  + .wpcf7-list-item-label::before {
+  padding-left: 10px;
+}
+
+/* contact-thanks
+-----------------------------------------------------------------*/
+.contact-thanks {
+  text-align: center;
+  padding: 60px 0 110px;
+}
+
+.contact-thanks .section-text {
+  margin-bottom: 100px;
+}
+
+@media (max-width: 640px) {
+
+  .contact-thanks .section-text {
+    text-align: left;
+  }
+}
+
+.contact-thanks .btn-s.rev {
+  margin: 0 auto;
+}
+
+/******************************************************************
+ * 個人情報保護方針
+******************************************************************/
+/* personal-list
+-----------------------------------------------------------------*/
+.personal-list {
+  padding: 40px 0 0;
+}
+
+.personal-list .item {
+  margin-bottom: 70px;
+}
+
+.personal-list .item .title {
+  margin-bottom: 10px;
+}
+
+.personal-list .item .title h2 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+@media (max-width: 1079px) {
+  .personal-list .item .title h2 {
+    font-size: 18px;
+  }
+}
+
+.personal-list .item .title h2 span {
+  font-family: "Montserrat", sans-serif;
+  border-bottom: 4px solid var(--primary-color);
+  margin-right: 40px;
+}
+
+@media (max-width: 1079px) {
+  .personal-list .item .title h2 span {
+    margin-right: 24px;
+  }
+}
+
+.personal-list .item .section-text,
+.personal-list .item ol,
+.personal-list .item ul {
+  margin-left: 76px;
+}
+
+@media (max-width: 1079px) {
+  .personal-list .item .section-text,
+  .personal-list .item ol,
+  .personal-list .item ul {
+    margin-left: 52px;
+  }
+}
+
+@media (max-width: 640px) {
+  .personal-list .item .section-text,
+  .personal-list .item ol,
+  .personal-list .item ul {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 640px) {
+  .personal-list .item .section-olist {
+    margin-left: 21px;
+  }
+}
+
+@media (max-width: 640px) {
+  .personal-list .item .section-olist li {
+    text-indent: -1.6em;
+    margin-right: 1.6em;
+  }
+}
+
+.personal-list .item .section-olist li span {
+  margin-right: 6px;
+}
+
+@media (max-width: 640px) {
+  .personal-list .item .section-ulist {
+    margin-left: 14px;
+  }
+}
+
+@media (max-width: 640px) {
+  .personal-list .item .section-ulist li {
+    text-indent: -1em;
+    margin-right: 1em;
+  }
+}
+
+.personal-list .item .section-ulist li::before {
+  content: "・";
+}
+
+/*# sourceMappingURL=src/sass/style.css.map */
