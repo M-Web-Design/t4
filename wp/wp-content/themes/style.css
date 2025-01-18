@@ -10,6 +10,7 @@
 /* line 8, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_reset.scss */
 :root {
 	--primary-color: #b6dfff;
+  --secondary-color: #f66e6e;
   }
   
 html,
@@ -372,7 +373,7 @@ img {
   background: var(--primary-color);
   border-radius: 50px;
 border: var(--primary-color) 2px solid;
-transition: background-color 0.2s ease, border-color 0.2s ease; /* 添加過渡效果 */
+transition: 0.2s ease /* 添加過渡效果 */
 
 
 }
@@ -380,6 +381,8 @@ transition: background-color 0.2s ease, border-color 0.2s ease; /* 添加過渡�
 .btn-s:hover{
 	background:#8ccdff;
 	border: var(--primary-color) 2px solid;
+  scale: 1.1;
+
 }
 
 /* line 116, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_common.scss */
@@ -395,103 +398,8 @@ transition: background-color 0.2s ease, border-color 0.2s ease; /* 添加過渡�
 
 
 
-/* line 163, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_common.scss */
-.btn-s a:hover .line::before,
-.btn-s button:hover .line::before {
-  animation-duration: 0.8s;
-  animation-name: btnLine;
-}
 
-@keyframes btnLine {
-  0% {
-    transform: translateX(0);
-  }
-  25% {
-    transform: translateX(100%);
-    background-color: #000;
-  }
-  26% {
-    background-color: transparent;
-  }
-  27% {
-    transform: translateX(-100%);
-  }
-  40% {
-    background-color: #000;
-  }
-  100% {
-    transform: translateX(0);
-  }
-}
 
-/* line 196, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_common.scss */
-.btn-s button {
-  background-color: rgba(0, 0, 0, 0);
-}
-
-/* line 200, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_common.scss */
-.btn-s.rev {
-  height: 60px;
-  background: #fff;
-  border-radius: 50px 14px 14px 50px;
-}
-
-/* line 205, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_common.scss */
-.btn-s.rev::after {
-  position: absolute;
-  left: 20px;
-  top: 15px;
-  content: " ";
-  width: 30px;
-  height: 30px;
-  background: var(--primary-color);
-  border-radius: 50px;
-  transition: all 0.4s linear;
-}
-
-/* line 219, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_common.scss */
-.btn-s.rev a .line,
-.btn-s.rev button .line {
-  position: absolute;
-  height: 2px;
-  width: 30px;
-  top: 29px;
-  left: 36px;
-  z-index: 10;
-  overflow: hidden;
-}
-
-/* line 228, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_common.scss */
-.btn-s.rev a .line::before,
-.btn-s.rev button .line::before {
-  width: 30px;
-  height: 2px;
-  content: " ";
-  background: #000;
-  display: block;
-}
-
-/* line 237, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_common.scss */
-.btn-s.rev a .dot,
-.btn-s.rev button .dot {
-  position: absolute;
-  left: 30px;
-  top: 25px;
-  content: " ";
-  width: 10px;
-  height: 10px;
-  background: #000;
-  font-size: 10px;
-  border-radius: 50px;
-  z-index: 10;
-}
-
-/* line 253, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_common.scss */
-.btn-s.rev a:hover .line::before,
-.btn-s.rev button:hover .line::before {
-  animation-duration: 0.8s;
-  animation-name: btnLineRev;
-}
 
 @keyframes btnLineRev {
   0% {
@@ -529,10 +437,19 @@ transition: background-color 0.2s ease, border-color 0.2s ease; /* 添加過渡�
 /* line 296, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_common.scss */
 .btn-l {
   position: relative;
-  width: 600px;
+  width: 400px;
   background: var(--primary-color);
   border-radius: 50px;
   margin: 0 auto;
+  transition: 0.3s;
+  border: 2px solid var(--primary-color);
+}
+
+.btn-l:hover{
+  background: #fff;
+  border: 2px solid #333333;
+  
+  
 }
 
 @media (max-width: 1079px) {
@@ -551,19 +468,7 @@ transition: background-color 0.2s ease, border-color 0.2s ease; /* 添加過渡�
 }
 
 
-@media (max-width: 1079px) {
-  /* line 312, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_common.scss */
-  .btn-l::after {
-    top: 20px;
-    right: 20px;
-  }
-}
 
-/* line 335, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_common.scss */
-.btn-l:hover::after {
-  transform: scale(1.3, 1.3);
-  transition: all 0.4s ease;
-}
 
 /* line 342, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_common.scss */
 .btn-l a {
@@ -576,79 +481,7 @@ transition: background-color 0.2s ease, border-color 0.2s ease; /* 添加過渡�
   letter-spacing: 6px;
 }
 
-@media (max-width: 1079px) {
-  /* line 342, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_common.scss */
-  .btn-l a {
-    height: 80px;
-    font-size: 22px;
-  }
-}
 
-@media (max-width: 640px) {
-  /* line 342, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_common.scss */
-  .btn-l a {
-    justify-content: normal;
-    font-size: 18px;
-    padding-left: 60px;
-  }
-}
-
-/* line 362, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_common.scss */
-.btn-l a .line {
-  position: absolute;
-  width: 50px;
-  height: 2px;
-  top: 49px;
-  right: 40px;
-  z-index: 10;
-  overflow: hidden;
-}
-
-@media (max-width: 1079px) {
-  /* line 362, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_common.scss */
-  .btn-l a .line {
-    width: 34px;
-    top: 38px;
-    right: 40px;
-  }
-}
-
-/* line 377, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_common.scss */
-.btn-l a .line::before {
-  width: 50px;
-  height: 2px;
-  content: " ";
-  background: #000;
-  display: block;
-}
-
-/* line 387, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_common.scss */
-.btn-l a .dot {
-  position: absolute;
-  top: 45px;
-  right: 34px;
-  content: " ";
-  width: 10px;
-  height: 10px;
-  background: #000;
-  font-size: 10px;
-  border-radius: 50px;
-  z-index: 10;
-}
-
-@media (max-width: 1079px) {
-  /* line 387, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_common.scss */
-  .btn-l a .dot {
-    top: 34px;
-    right: 35px;
-  }
-}
-
-/* line 410, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_common.scss */
-.btn-l a:hover .line::before {
-  animation-duration: 0.8s;
-  animation-name: btnLine;
-}
 
 @keyframes btnLine {
   0% {
@@ -677,7 +510,7 @@ transition: background-color 0.2s ease, border-color 0.2s ease; /* 添加過渡�
 .contactHam {
   margin: 0 auto;
   width: 200px;
-  background: #f66e6e
+  background-color: var(--secondary-color);
   border-radius: 6px 0 0 0;
   z-index: 100;
 }
@@ -703,7 +536,7 @@ transition: background-color 0.2s ease, border-color 0.2s ease; /* 添加過渡�
   color: #fff;
   font-weight: bold;
   padding: 16px 0;
-  background: #f66e6e
+  background-color: var(--secondary-color);
 }
 
 /* line 470, wordpress/wp-content/themes/aoba-kaikei/src/sass/modules/_common.scss */
@@ -2164,7 +1997,7 @@ html.front footer {
   font-weight: bold;
   padding: 16px 0;
   width: 200px;
-  background: #f66e6e
+  background: var(--secondary-color);
   border-radius: 6px 0 0 0;
   z-index: 200;
 }
